@@ -1,0 +1,7 @@
+[ 2016-11-08T11:55:56+08:00 ] ::1 /aaaa/index.php?s=BookDrift/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.026000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030000s ]
+ERR: 无法加载模块:BookDrift
+

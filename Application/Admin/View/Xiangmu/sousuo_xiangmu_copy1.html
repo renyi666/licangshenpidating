@@ -1,0 +1,198 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 --><script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+	<div class="main-title">
+		<h2>查看更新状态</h2>
+	</div>
+	<div class="cf">
+		<div class="fl">
+			
+            <a class="btn" href="{:U('bianji2',array('id'=>$a['xiangmu_id'],'name'=>$a['name'],'fenlei'=>$a['fenlei'],'man'=>$a['man'],'company'=>$a['company'],'location'=>$a['location'],'phone'=>$a['phone'],'work_progress'=>$a['work_progress'],'next_plan'=>$a['next_plan'],'problem'=>$a['problem']))}">新建更新状态</a>
+                    <a class="btn" href="{:U('dayin_sousuo_xiangmu_copy',array('sql'=>$a['0']))}">打印当前记录</a>
+
+        </div>
+ 
+        <form action="{:U('Xiangmu/sousuo_xiangmu_copy1')}" method="post">
+        	
+        
+				创建日期：	<input type="text" name="time1" class="text time" value="" placeholder="请选择时间" />
+				
+				 
+					<input type="text" name="time2" class="text time" value="" placeholder="请选择时间" />
+	<volist name="_list" id="vo">
+     <input type="hidden" name="xiangmu_id" value="{$vo.xiangmu_id}" />  
+				
+				</volist>
+
+				<input type="submit" name="submit" value="查询">    
+				  </form>
+        
+
+        <!-- 高级搜索 -->
+		<!--<div class="search-form fr cf">
+			<div class="sleft">
+				<input type="text" name="id" class="search-input" value="{:I('id')}" placeholder="请输入项目编号">
+				<a class="sch-btn" href="javascript:;" id="search" url="{:U('index')}"><i class="btn-search"></i></a>
+			</div>
+		</div>-->
+    </div>
+    <!-- 数据列表 -->
+    <div class="data-table table-striped">
+	<table class="">
+    <thead>
+        <tr>
+		<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+		<th class="">项目编号</th>
+		<th class="">项目名称</th>
+			<th class="">项目分类</th>
+		<th class="">项目位置</th>
+		
+		<th class="">责任单位</th>
+		<th class="">责任人</th>
+		<th class="">联系电话</th>
+		<!--<th class="">最后登录IP</th>-->
+		
+		<th class="">目前工作进展情况</th>
+		<th class="">下一步工作打算</th>
+		<th class="">存在问题</th>
+		
+		<th class="">是否需要协调</th>
+		<th class="">是否开工</th>
+		
+		<th class="">市重点项目</th>
+		<th class="">市政务办现场会项目</th>
+		<th class="">区重点项目</th>
+		<th class="">区局联席会项目</th>
+		
+		<th class="">更新日期</th>
+		<th class="">操作</th>
+		
+		</tr>
+    </thead>
+    <tbody>
+		<notempty name="_list">
+		<volist name="_list" id="vo">
+		<tr>
+             <td><input class="ids" type="checkbox" name="id[]" value="{$vo.id}" /></td>
+			<td>{$vo.xiangmu_id} </td>
+			<td>{$vo.name}</td>
+			<td>{$vo.fenlei}</td>
+			 <td>{$vo.location}</td>
+			 
+			<td>{$vo.company}</td>
+			<td>{$vo.man}</td>
+			 <td>{$vo.phone}</td>
+			 
+			<td><span>{$vo.work_progress}</span></td>
+				<td><span>{$vo.next_plan}</span></td>
+			
+			<td>{$vo.problem}</td>
+			
+			
+			
+			<td>{$vo.help}</td>
+			<td>{$vo.action}</td>
+			
+			
+			<td>{$vo.major}</td>
+			<td>{$vo.major2}</td>
+			<td>{$vo.major3}</td>
+			<td>{$vo.major4}</td>
+			
+		
+			<td>{$vo.time}</td>
+			
+			
+			<td><eq name="vo.status" value="1">
+				
+			
+				
+                <a href="{:U('Xiangmu/xiangmu_copy_delete',array('id'=>$vo['id']))}" >删除</a>
+                </td>
+               
+		</tr>
+		</volist>
+		<else/>
+		
+		</notempty>
+	</tbody>
+    </table>
+	</div>
+    <div class="page">
+        {$_page}
+    </div>
+    	<script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+
+</block>
+
+<block name="script">
+	<script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+<link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+<php>if(C('COLOR_STYLE')=='blue_color') echo '<link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">';</php>
+<link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script type="text/javascript">
+	//搜索功能
+$("#search").click(function(){
+var url = $(this).attr('url');
+var query  = $('.search-form').find('input').serialize();
+query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+query = query.replace(/^&/g,'');
+if( url.indexOf('?')>0 ){
+url += '&' + query;
+}else{
+url += '?' + query;
+}
+window.location.href = url;
+});
+
+$('#submit').click(function(){
+	$('#form').submit();
+});
+
+$(function(){
+    $('.date').datetimepicker({
+        format: 'yyyy-mm-dd',
+        language:"zh-CN",
+        minView:2,
+        autoclose:true
+    });
+    $('.time').datetimepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        language:"zh-CN",
+        minView:2,
+        autoclose:true
+    });
+        showTab();
+//回车搜索
+$(".search-input").keyup(function(e){
+if(e.keyCode === 13){
+$("#search").click();
+return false;
+}
+});
+//导航高亮
+highlight_subnav('{:U('User/index')}');
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+     
+	
+
+});
+	</script>
+</block>

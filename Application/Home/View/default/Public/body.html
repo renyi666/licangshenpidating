@@ -1,0 +1,87 @@
+<block name="header"></block>
+       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="{:U('Index/index')}">
+						<!--<span>Lumino</span>-->
+						李沧区建设项目综合业务平台
+					</a>
+					<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">{:get_username()} <span class="caret" style="color:#fff;border-top:4px solid #fff"></span></a>
+						<ul class="dropdown-menu" role="menu" id="dropdown-menu">
+							<li><a href="{:U('User/profile')}">修改密码</a></li>
+							<li><a href="{:U('User/logout')}">退出</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="sidebar-collapse" class="sidebar">
+			<form role="search">
+				<!--<div class="form-group">-->
+					<!--<input type="text" class="form-control" placeholder="搜索">-->
+				<!--</div>-->
+			</form>
+			<ul class="nav menu">
+				<li class="parent ">
+					<a href="{:U('Index/index')}">项目管理 <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right">
+					</span> 
+					</a>
+					<ul class="children collapse" id="sub-item-1">
+						<li><a href="{:U('Index/index')}">项目进度情况</a></li>
+						<!--<li><a href="{:U('Index/next_index')}">项目进展</a></li>-->
+						<li><a class="" href="{:U('Index/xinjian')}">添加新项目</a></li>
+					</ul>
+				</li>
+				<li class="parent ">
+					<a href="#">报表打印 <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right">
+					</span> 
+					</a>
+					<ul class="children collapse" id="sub-item-2">
+						<li><a class="" href="{:U('Index/city_project')}">市重点项目</a></li>
+						<li><a class="" href="{:U('Index/major2')}">市政务办现场会项目</a></li>
+						<li><a class="" href="{:U('Index/major3')}">区重点项目</a></li>
+						<li><a class="" href="{:U('Index/major4')}">区局联席会项目</a></li>
+						<li><a class="" href="{:U('Index/haimian')}">海绵城市建设项目</a></li>
+
+					</ul>
+				</li>
+				<!--<li class="parent ">-->
+					<!--<a href="#">数据管理-->
+						<!--<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">-->
+						<!--</span> -->
+					<!--</a>-->
+					<!--<ul class="children collapse" id="sub-item-3">-->
+						<!--<li>-->
+							<!--<a class="" href="#">责任单位</a>-->
+						<!--</li>-->
+						<!--<li>-->
+				<!--<a class="" href="#">分类设置</a>-->
+						<!--</li>-->
+					<!--</ul>-->
+				<!--</li>-->
+			</ul>
+			
+		</div>
+		<div class="side_right">
+        	<block name="body"></block>
+        </div>
+<script src="__STATIC__/jquery-1.11.1.min.js"></script>
+<script src="__STATIC__/bootstrap/js/bootstrap.min.js"></script>
+<script src="__STATIC__/bootstrap/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+    $(function(){
+      $(".user-menu").click(function(){
+      	$("#dropdown-menu").toggle()
+      });
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+		$("#sidebar-collapse").height($(".side_right").height());
+    })
+</script>

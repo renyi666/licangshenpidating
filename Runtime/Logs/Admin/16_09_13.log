@@ -1,0 +1,1642 @@
+[ 2016-09-13T17:25:41+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1337 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1337 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1337 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1337 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1337 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+ERR: Cell coordinate can not be zero-length string
+
+[ 2016-09-13T17:29:01+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0020s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1334 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1334 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1334 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1334 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1334 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T17:37:26+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1336 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1336 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1336 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1336 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1336 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T17:39:06+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0010s ]
+ERR: Invalid cell coordinate AQ
+
+[ 2016-09-13T17:39:46+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+ERR: Invalid cell coordinate AQ
+
+[ 2016-09-13T17:41:39+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T17:42:28+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+ERR: Invalid cell coordinate AQ
+
+[ 2016-09-13T17:44:18+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1338 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+ERR: Invalid cell coordinate AQ
+
+[ 2016-09-13T17:44:41+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1340 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1340 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1340 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1340 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1340 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T17:45:01+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1339 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1339 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1339 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1339 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1339 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+ERR: Invalid cell coordinate AQ
+
+[ 2016-09-13T17:46:44+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1340 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1340 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1340 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1340 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1340 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+ERR: Invalid cell coordinate AQ
+
+[ 2016-09-13T17:48:04+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0020s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1341 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1341 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1341 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1341 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1341 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+ERR: Invalid cell coordinate AQ
+
+[ 2016-09-13T17:50:21+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1341 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1341 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1341 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1341 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1341 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T17:53:35+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1343 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1343 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1343 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1343 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1343 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T17:54:37+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1344 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1344 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1344 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1344 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1344 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0010s ]
+
+[ 2016-09-13T17:58:58+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1342 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1342 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1342 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1342 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1342 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Worksheet.php 第 1691 行.
+ERR: Cell coordinate can not be zero-length string
+
+[ 2016-09-13T18:00:27+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1343 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1343 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1343 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1343 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1343 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T18:01:32+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-13T18:01:51+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-13T18:01:52+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-13T18:01:53+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-13T18:01:53+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-13T18:01:53+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-13T18:01:54+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-13T18:02:10+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1346 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1346 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1346 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1346 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1346 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T18:02:53+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1345 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1345 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1345 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1345 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1345 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T18:03:57+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1347 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1347 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1347 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1347 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1347 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T18:04:31+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1348 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1348 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1348 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1348 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1348 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: n1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1215 行.
+NOTIC: [8] Undefined variable: n1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1219 行.
+ERR: Invalid cell coordinate AQ
+
+[ 2016-09-13T18:04:52+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1347 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1347 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1347 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1347 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1347 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T18:05:34+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T18:06:50+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T18:07:23+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T18:07:58+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1350 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0010s ]
+
+[ 2016-09-13T18:08:26+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T18:08:38+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+
+[ 2016-09-13T18:09:01+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/dayin_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu`  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '工业投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '政府投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 1349 行.
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('5','6','7','2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 604 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 605 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 606 AND `stage` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 607 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `item_name`,`start_time`,`end_time` FROM `one_first_stage` WHERE `xiangmu_id` = 608 AND `stage` = 7  [ RunTime:0.0000s ]
+

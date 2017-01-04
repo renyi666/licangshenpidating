@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title></title>
+</head>
+<body>
+<input type="checkbox"  id="father" onclick="changeAll()">
+<input type="button" value="反选" onclick="fanxuan() , change()"/>
+<hr/>
+<input type="checkbox" name="son" onclick="change()" >
+<input type="checkbox" name="son" onclick="change()">
+<input type="checkbox" name="son" onclick="change()" >
+<input type="checkbox" name="son" onclick="change()" >
+<input type="checkbox" name="son" onclick="change()">
+
+<script type="text/javascript">
+
+    var fathers=document.getElementById("father");
+    var sons=document.getElementsByName("son");
+
+    function fanxuan(){
+        for(var i=0 ;i<sons.length;i++){
+            if(sons[i].checked){
+                sons[i].checked="";
+            }else{
+                sons[i].checked="checked";
+            }
+
+
+        }
+
+    }
+
+
+
+
+    function changeAll(){
+
+
+        if(fathers.checked){
+            for(var i=0;i<sons.length;i++){
+
+                sons[i].checked="checked";
+
+            }
+
+        }else{
+            for(var i=0;i<sons.length;i++){
+                sons[i].checked="";
+            }
+        }
+    }
+
+    function  change(){
+
+        var isTrue=true;
+
+        for(var i=0;i<sons.length;i++){
+
+            isTrue=(isTrue&&sons[i].checked);
+
+        }
+
+        if(isTrue){
+
+            fathers.checked="checked";
+
+
+        }else{
+
+            fathers.checked="" ;
+
+        }
+
+    }
+
+
+</script>
+</body>
+</html>

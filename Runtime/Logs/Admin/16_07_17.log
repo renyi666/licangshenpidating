@@ -1,0 +1,322 @@
+[ 2016-07-17T15:30:31+08:00 ] ::1 /aaaa/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.268015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.385022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.095005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.095005s ]
+
+[ 2016-07-17T15:30:31+08:00 ] ::1 /aaaa/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.348020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.348020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.096005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.096005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2016-07-17T15:30:33+08:00 ] ::1 /aaaa/admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-17T15:31:32+08:00 ] ::1 /aaaa/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-17T15:31:32+08:00 ] ::1 /aaaa/admin.php?s=/Public/verify.html&random=0.21723973277401853
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-17T15:31:40+08:00 ] ::1 /aaaa/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_member` [ RunTime:0.0330s ]
+SQL: SELECT `uid`,`nickname`,`work_place`,`first_time`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `one_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_action` [ RunTime:0.0830s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `one_action_log` [ RunTime:0.1680s ]
+SQL: INSERT INTO `one_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','0','member','1','1468740699','gaoyuan在2016-07-17 15:31登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `one_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1468654299 LIMIT 1   [ RunTime:0.0810s ]
+SQL: SHOW COLUMNS FROM `one_member` [ RunTime:0.0030s ]
+SQL: UPDATE `one_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:0.0000s ]
+SQL: UPDATE `one_member` SET `login`=`login`+1,`last_login_time`='1468740699',`last_login_ip`='0' WHERE `uid` = 1 [ RunTime:0.0000s ]
+
+[ 2016-07-17T15:31:41+08:00 ] ::1 /aaaa/admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `one_menu` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`url` FROM `one_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT `pid` FROM `one_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `one_addons` [ RunTime:0.1150s ]
+SQL: SELECT `config` FROM `one_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `one_member` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_member` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_action_log` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_action_log` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_document` [ RunTime:0.1020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_document` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_category` [ RunTime:0.0550s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_category` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_model` [ RunTime:0.0900s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_model` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.625036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.624036s ]
+SQL: SELECT `config` FROM `one_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.878050s ]
+SQL: select version() as v; [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.211012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.254014s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.254014s ]
+SQL: SELECT `config` FROM `one_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.029059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089005s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.316018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.404023s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.150009s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.028059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089005s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.316018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.405023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-17T15:31:44+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`url` FROM `one_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `one_menu` WHERE ( pid !=0 AND url like '%Xiangmu/index%' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `one_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `one_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `one_menu` WHERE `group` = '项目管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `one_menu` WHERE `group` = '责任单位' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.1970s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 78 行.
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 78 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 78 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 108 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 108 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 110 行.
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 110 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 110 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_location` [ RunTime:0.1170s ]
+SQL: SELECT * FROM `one_xiangmu_location`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-17T15:33:13+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/xinjian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_location` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Xaingmu - assumed 'Xaingmu' D:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\29e7c4a902dcb132185a88927cc3860e.php 第 94 行.
+NOTIC: [8] Use of undefined constant xinjian - assumed 'xinjian' D:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\29e7c4a902dcb132185a88927cc3860e.php 第 94 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\29e7c4a902dcb132185a88927cc3860e.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.209012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.209012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-17T15:33:37+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/xinjian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_location` [ RunTime:0.0180s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+NOTIC: [8] Undefined variable: options D:\phpStudy\WWW\aaaa\ThinkPHP\Library\Org\Util\PHPExcel\Settings.php 第 384 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_first` [ RunTime:0.3770s ]
+SQL: SELECT * FROM `one_xiangmu_location` WHERE `name` = '第一建筑公司、第二建筑'  [ RunTime:0.0000s ]
+SQL: INSERT INTO `one_xiangmu_first` (`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`) VALUES ('枯桃住宅小区','分类二','李摘录','第一建筑公司、第二建筑','高远','15764246304',NULL,'正在锦汉',NULL,'否','是','否','是','是','是','1') [ RunTime:0.0070s ]
+SQL: INSERT INTO `one_xiangmu` (`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`) VALUES ('枯桃住宅小区','分类二','李摘录','第一建筑公司、第二建筑','高远','15764246304',NULL,'正在锦汉',NULL,'否','是','否','是','是','是','1') [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.2020s ]
+SQL: INSERT INTO `one_xiangmu_copy` (`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`xiangmu_id`) VALUES ('枯桃住宅小区','分类二','李摘录','第一建筑公司、第二建筑','高远','15764246304',NULL,'正在锦汉',NULL,'否','是','否','是','是','是','1','449') [ RunTime:0.0030s ]
+SQL: SELECT * FROM `one_xiangmu_location` WHERE `name` = '第二建筑公司'  [ RunTime:0.0010s ]
+SQL: INSERT INTO `one_xiangmu_first` (`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`) VALUES ('旧城改造','分类一','旧城区','第二建筑公司','高远','15764246304',NULL,'改造中',NULL,'是','是','是','是','是','是','1') [ RunTime:0.0040s ]
+SQL: INSERT INTO `one_xiangmu` (`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`) VALUES ('旧城改造','分类一','旧城区','第二建筑公司','高远','15764246304',NULL,'改造中',NULL,'是','是','是','是','是','是','1') [ RunTime:0.0030s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `one_xiangmu_copy` (`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`xiangmu_id`) VALUES ('旧城改造','分类一','旧城区','第二建筑公司','高远','15764246304',NULL,'改造中',NULL,'是','是','是','是','是','是','1','450') [ RunTime:0.0050s ]
+SQL: SELECT * FROM `one_xiangmu_location` WHERE `name` = '第三建筑公司'  [ RunTime:0.0010s ]
+SQL: INSERT INTO `one_xiangmu_first` (`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`) VALUES ('护城河','分类三','胡城区','第三建筑公司','高远','15764246304',NULL,'改造中','无','否','是','是','是','否','是','1') [ RunTime:0.0020s ]
+SQL: INSERT INTO `one_xiangmu` (`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`) VALUES ('护城河','分类三','胡城区','第三建筑公司','高远','15764246304',NULL,'改造中','无','否','是','是','是','否','是','1') [ RunTime:0.0030s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0020s ]
+SQL: INSERT INTO `one_xiangmu_copy` (`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`xiangmu_id`) VALUES ('护城河','分类三','胡城区','第三建筑公司','高远','15764246304',NULL,'改造中','无','否','是','是','是','否','是','1','451') [ RunTime:0.0020s ]
+
+[ 2016-07-17T15:33:37+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 78 行.
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 78 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 78 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 108 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 108 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 110 行.
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 110 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 110 行.
+NOTIC: [8] Undefined variable: i D:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_location` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_xiangmu_location`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

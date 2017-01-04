@@ -1,0 +1,294 @@
+<extend name="Base/common"/>
+<script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/module.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/default_color.css">
+<script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+
+<block name="body">
+
+    <div class="cf" style="float: left;">
+        <div class="fl" style="float: right;">
+
+            <!--<a class="btn btn-success " type="button" href="{:U('Index/xinjian')}">新增项目</a>-->
+            <a class="btn btn-success " type="button" href="{:U('Index/dayin_all')}" style="margin-left:20px;">打印当前记录</a>
+        </div>
+        <div>
+            <form action="{:U('Index/next_sousuo')}" method="post">
+
+                创建日期：
+                <input type="text" name="time1" class="text time" value="" placeholder="请选择时间" />
+
+                <input type="text" name="time2" class="text time" value="" placeholder="请选择时间" />
+                项目名称：	<input type="text" name="name" class="name" placeholder="请输入项目名称" />
+                分类：
+                <select name="fenlei"id="fenlei">
+                    <option value=''></option>
+                    <volist name="fenlei" id="fenlei">
+                        <option value='{$fenlei['name']}'>{$fenlei.name}</option>
+                    </volist>
+                </select>
+                责任单位：
+                <select name="company"id="company">
+                    <option value=''></option>
+                    <volist name="company" id="company">
+                        <option value='{$company['company']}'>{$company.company}</option>
+                    </volist>
+                </select>
+
+                <input type="submit" value="查询" class="btn btn-success "style="margin-left:20px"/>
+                <!--<div class="checkbox">-->
+                <!--<label>-->
+                <!--<input type="checkbox" name="new" value="是">-->
+                <!--是否显示最新进展 </label>-->
+                <!--</div>-->
+                <div class="form-item">
+
+                    <div class="controls" style="padding-left:20px">
+                        <label class="checkbox" >
+                            <input type="checkbox" name="help" value="是"
+                            />
+                            是否需要协调 </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="action" value="是" />
+                            是否开工 </label>
+
+                        <label class="checkbox">
+                            <input type="checkbox" name="shenpi" value="是"/>
+                            是否通过审批 </label>
+                        <label class="checkbox" >
+                            <input type="checkbox" name="major" value="是" />
+                            市重点项目 </label>
+
+                        <label class="checkbox" >
+                            <input type="checkbox" name="major2" value="是" />
+                            市政务办现场会项目 </label>
+
+                        <label class="checkbox" >
+                            <input type="checkbox" name="major3" value="是" />
+                            区重点项目 </label>
+
+                        <label class="checkbox" >
+                            <input type="checkbox" name="major4" value="是" />
+                            区局联席会项目 </label>
+
+                        <label class="checkbox" >
+                            <input type="checkbox" name="haimian" value="是" />
+                            海绵城市建设项目 </label>
+
+
+
+                    </div>
+
+                </div>
+
+
+            </form>
+        </div>
+        <!-- 数据列表 -->
+        <div class="sort"  style="float: right;">
+            <span></span>
+            <a href="{:U('Index/index',array('PHPSESSID'=>'rd23sbgojojkgfanu9bhh87m94','p'=>$next_now))}"style="color:#005ea7">< 主要信息 丨</a>
+            <a href="{:U('Index/next_index')}"  style="background: #fff2f2;color:#e4393c">更多信息 ></a>
+        </div>
+        <br>
+        <div class="data-table table-striped">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th class="">编号</th>
+                    <th class="">项目名称</th>
+                    <th class="">项目建设年度</th>
+                    <th class="">建设内容</th>
+
+                    <th class="">本月周进度计划安排</th>
+                    <th class="">2016年9月计划安排</th>
+                    <th class="">2016年10月计划安排</th>
+                    <!--<th class="">最后登录IP</th>-->
+
+                    <!--<th class="">目前工作进展情况</th>-->
+
+                    <!--<th class="">下一步工作打算</th>-->
+                    <!--<th class="">存在问题</th>-->
+
+                    <!--<th class="">是否需要协调</th>-->
+                    <!--<th class="">是否开工</th>-->
+
+                    <!--<th class="">市重点项目</th>-->
+                    <!--<th class="">市政务办现场会项目</th>-->
+                    <!--<th class="">区重点项目</th>-->
+                    <!--<th class="">区局联席会项目</th>-->
+                    <!--<th class="">海绵城市建设项目</th>-->
+                    <!--<th class="">是否通过审批</th>-->
+
+                    <!--<th class="">更新日期</th>-->
+                    <th class="">操作</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <notempty name="_list">
+                    <volist name="_list" id="vo">
+                        <tr>
+                            <td>{$vo.id}</td>
+                            <td>{$vo.name}</td>
+                            <td>{$vo.construction_year}</td>
+                            <td>{$vo.construction_content}</td>
+
+                            <td>{$vo.current_week}</td>
+                            <td>{$vo.plan_01}</td>
+                            <td>{$vo.plan_02}</td>
+
+                            <!--<td>{$vo.work_progress}</td>-->
+                            <!--<td>{$vo.next_plan}</td>-->
+
+                            <!--<td>{$vo.problem}</td>-->
+
+                            <!--<td>{$vo.help}</td>-->
+                            <!--<td>{$vo.action}</td>-->
+
+                            <!--<td>{$vo.major}</td>-->
+                            <!--<td>{$vo.major2}</td>-->
+                            <!--<td>{$vo.major3}</td>-->
+                            <!--<td>{$vo.major4}</td>-->
+                            <!--<td>{$vo.haimian}</td>-->
+                            <!--<td>{$vo.shenpi}</td>-->
+
+                            <!--<td>{$vo.time}</td>-->
+
+                            <td>
+                                <!--<a href="{:U('Index/xiangmu_copy_chakan',array('id'=>$vo['id'],'name'=>$vo['name'],'fenlei'=>$vo['fenlei'],'user_uid'=>$vo['user_uid']))}" >查看</a>-->
+                                <!--<br />-->
+                                <a href="{:U('Index/bianji',array('id'=>$vo['id']))}" >查看</a>
+                            </td>
+
+                        </tr>
+                    </volist>
+                    <else/>
+
+                </notempty>
+                </tbody>
+
+
+
+
+                <!--<tbody>-->
+                <!--<notempty name="_list">-->
+                    <!--<volist name="_list" id="vo">-->
+                        <!--<tr>-->
+
+                            <!--<td>{$vo.id} </td>-->
+                            <!--<td>{$vo.name}</td>-->
+
+
+
+                            <!--<td>{$vo.construction_year}</td>-->
+                            <!--<td>{$vo.construction_content}</td>-->
+                            <!--<td>{$vo.current_week}</td>-->
+                            <!--<td>{$vo.finish_time1}</td>-->
+                            <!--<td>{$vo.finish_time2}</td>-->
+                            <!--<td>{$vo.finish_time3}</td>-->
+                            <!--<td>{$vo.finish_time4}</td>-->
+                            <!--<td>{$vo.finish_time5}</td>-->
+                            <!--<td>{$vo.finsih_time6}</td>-->
+                            <!--<td>{$vo.finsih_time7}</td>-->
+                            <!--<td>{$vo.finsih_time8}</td>-->
+                            <!--<td>{$vo.finsih_time9}</td>-->
+                            <!--<td>{$vo.finsih_time10}</td>-->
+                            <!--<td>{$vo.finsih_time11}</td>-->
+                            <!--<td>{$vo.plan_01}</td>-->
+                            <!--<td>{$vo.plan_02}</td>-->
+                            <!--<td>{$vo.plan_03}</td>-->
+                            <!--<td>{$vo.plan_04}</td>-->
+                            <!--<td>{$vo.plan_05}</td>-->
+                            <!--<td>{$vo.plan_06}</td>-->
+                            <!--<td>{$vo.plan_07}</td>-->
+                            <!--<td>{$vo.money_need}</td>-->
+                            <!--<td>{$vo.next_year_plan}</td>-->
+                            <!--<td>{$vo.money_need_next}</td>-->
+
+
+
+
+
+                            <!--<td>{$vo.time}</td>-->
+
+
+                            <!--<td>-->
+                                <!--<a href="{:U('Index/next_xiangmu_copy_chakan',array('id'=>$vo['id'],'name'=>$vo['name'],'fenlei'=>$vo['fenlei'],'user_uid'=>$vo['user_uid']))}" >查看</a>-->
+                                <!--<br />-->
+                                <!--<a href="{:U('Index/bianji',array('id'=>$vo['id']))}" >编辑</a>-->
+                            <!--</td>-->
+
+                        <!--</tr>-->
+                    <!--</volist>-->
+                    <!--<else/>-->
+
+                <!--</notempty>-->
+                <!--</tbody>-->
+            </table>
+        </div>
+        <div class="page">
+
+            {$_page}
+        </div>
+
+        <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+
+</block>
+
+<block name="script">
+    <script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+    <link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+    <php>
+        if(C('COLOR_STYLE')=='blue_color') echo '
+        <link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">
+        ';
+    </php>
+    <link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+
+        //搜索功能
+        $("#search").click(function(){
+            var url = $(this).attr('url');
+            var query  = $('.search-form').find('input').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+
+        $('#submit').click(function(){
+            $('#form').submit();
+        });
+
+        $(function(){
+            $('.date').datetimepicker({
+                format: 'yyyy-mm-dd',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true
+            });
+            $('.time').datetimepicker({
+                format: 'yyyy-mm-dd hh:ii',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true
+            });
+//回车搜索
+            $(".search-input").keyup(function(e){
+                if(e.keyCode === 13){
+                    $("#search").click();
+                    return false;
+                }
+            });
+
+        });
+    </script>
+
+</block>

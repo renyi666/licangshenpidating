@@ -1,0 +1,1177 @@
+[ 2016-07-25T16:42:10+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/xiangmu_copy_chakan/id/609/name/saadsad/fenlei/%E6%B0%91%E7%94%9F%E7%B1%BB/user_uid/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0060s ]
+SQL: SELECT `user_uid` FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 609  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 609 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `xiangmu_id`,`id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 609 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T16:42:13+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/sousuo_xiangmu_copy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0110s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu_copy` WHERE ( xiangmu_id=609  and create_time <= '1469868120'  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `xiangmu_id`,`id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu_copy` WHERE xiangmu_id=609  and create_time <= '1469868120'  ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_category` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `one_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `one_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_document` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `one_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1469436133 AND ( deadline = 0 OR deadline > 1469436133 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T16:42:14+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/bianji4/xiangmu_id/609.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 609 ORDER BY create_time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [8] Use of undefined constant bianji2 - assumed 'bianji2' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T16:43:09+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/bianji4/xiangmu_id/609.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0070s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 609 ORDER BY create_time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [8] Use of undefined constant bianji2 - assumed 'bianji2' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T16:43:13+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 7  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `user_uid` = 7 ORDER BY create_time desc  LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 166 行.
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T16:43:16+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index/PHPSESSID/rd23sbgojojkgfanu9bhh87m94/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0070s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 7  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `user_uid` = 7 ORDER BY create_time desc  LIMIT 10,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T16:43:19+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/bianji/id/590.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0080s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `one_xiangmu` WHERE `id` = 590  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+SQL: SELECT `user_uid` FROM `one_xiangmu` WHERE `id` = 590  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\5f68bd977d901c4924175b54d6a65907.php 第 139 行.
+NOTIC: [8] Use of undefined constant bianji - assumed 'bianji' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\5f68bd977d901c4924175b54d6a65907.php 第 139 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\5f68bd977d901c4924175b54d6a65907.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T16:43:23+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/bianji.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0080s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `one_xiangmu` WHERE `id` = 590  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+SQL: SELECT `user_uid` FROM `one_xiangmu` WHERE `id` = 590  [ RunTime:0.0000s ]
+SQL: SELECT `user_uid` FROM `one_xiangmu` WHERE `id` = 590  [ RunTime:0.0000s ]
+SQL: UPDATE `one_xiangmu` SET `user_uid`='7',`help`='否',`action`='否',`major`='否',`major2`='否',`major3`='否',`major4`='否',`fenlei`='海绵城市建设类',`name`='xczzxc',`next_plan`='',`location`='zxczxc',`company`='第三建筑公司',`man`='',`phone`='czxzxx',`work_progress`='',`problem`='',`construction_year`='',`construction_content`='',`current_week`='',`finish_time1`='',`finish_time2`='',`finish_time3`='',`finish_time4`='',`finish_time5`='',`finish_time6`='',`finish_time7`='',`finish_time8`='',`finish_time9`='',`finish_time10`='',`finish_time11`='',`plan_01`='',`plan_02`='',`plan_03`='',`plan_04`='',`plan_05`='',`plan_06`='',`plan_07`='',`money_need`='',`next_year_plan`='',`money_need_next`='' WHERE `id` = 590 [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate E:\phpStudy\WWW\aaaa\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\phpStudy\WWW\aaaa\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `one_xiangmu_copy` (`user_uid`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`fenlei`,`name`,`next_plan`,`location`,`company`,`man`,`phone`,`work_progress`,`problem`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`xiangmu_id`,`create_time`) VALUES ('7','否','否','否','否','否','否','海绵城市建设类','xczzxc','','zxczxc','第三建筑公司','','czxzxx','','','','','','','','','','','','','','','','','','','','','','','','','','','590','1469436203') [ RunTime:0.0310s ]
+
+[ 2016-07-25T16:43:23+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 7  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `user_uid` = 7 ORDER BY create_time desc  LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 166 行.
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T16:43:25+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index/PHPSESSID/rd23sbgojojkgfanu9bhh87m94/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 7  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `user_uid` = 7 ORDER BY create_time desc  LIMIT 10,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 235 行.
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T16:43:27+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/xiangmu_copy_chakan/id/590/name/xczzxc/fenlei/%E6%B5%B7%E7%BB%B5%E5%9F%8E%E5%B8%82%E5%BB%BA%E8%AE%BE%E7%B1%BB/user_uid/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0080s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0080s ]
+SQL: SELECT `user_uid` FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 590  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 590 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `xiangmu_id`,`id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 590 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T16:43:29+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/sousuo_xiangmu_copy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0090s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu_copy` WHERE ( xiangmu_id=590  and create_time <= '1469868180'  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `xiangmu_id`,`id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu_copy` WHERE xiangmu_id=590  and create_time <= '1469868180'  ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_category` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `one_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `one_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_document` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `one_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1469436209 AND ( deadline = 0 OR deadline > 1469436209 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T16:43:31+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/bianji4/xiangmu_id/590.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 590 ORDER BY create_time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [8] Use of undefined constant bianji2 - assumed 'bianji2' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T17:27:54+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/bianji4/xiangmu_id/590.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 590 ORDER BY create_time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [8] Use of undefined constant bianji2 - assumed 'bianji2' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T17:28:45+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/bianji4/xiangmu_id/590.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0180s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 590 ORDER BY create_time desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [8] Use of undefined constant bianji2 - assumed 'bianji2' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T17:30:01+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/bianji4/xiangmu_id/590.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 590 ORDER BY create_time desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [8] Use of undefined constant bianji2 - assumed 'bianji2' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T17:33:15+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/bianji4/xiangmu_id/590.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 267 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 590 ORDER BY create_time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [8] Use of undefined constant bianji2 - assumed 'bianji2' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\9e74324d586dae4724e5f8a6590d226a.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

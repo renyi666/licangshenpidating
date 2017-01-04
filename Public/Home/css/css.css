@@ -1,0 +1,105 @@
+/*******样式清零********/
+
+html,body{
+    margin:0;
+    font-size:14px;
+    font-family:'微软雅黑' Arial, Helvetica, sans-serif;
+}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,form,fieldset,input,textarea,img,menu{
+    margin:0;
+    padding:0;
+    list-style:none;
+    border:0;
+}
+h1,h2,h3,h4,h5,th{
+    font-size:14px;
+    font-weight:normal;
+}
+h6{
+    font-size:12px;
+    font-weight:normal;
+}
+p{
+    font-size:14px;
+}
+.background{
+	width:100%;
+	margin-top: 8%;
+	height:410px;
+	position: relative;
+	background: url(../images/14.jpg) no-repeat 50%;
+}
+.background img {
+	width: 100%;
+}
+.login-contant{
+	position: absolute;
+	width:370px;
+	height:290px;
+	background:#fff;
+	border: 1px solid #d3d3d3;
+	border-top:3px solid  #3176ac;
+	top:60px;
+	right:17%;
+	padding:30px;
+}
+ 	.login-contant h3{
+ 		color:#3176ac;
+ 		font-size:19px;
+ 		font-weight: 600;
+ 		margin-top: 0 !important;
+ 		margin-bottom:20px;
+ 		
+ 	}
+ 	.input{
+ 		width: 100%;
+ 		height: 40px;
+ 		border: 1px solid #d3d3d3;
+ 		padding:10px;
+ 		padding-left:45px;
+ 		background: url(../images/333.png)no-repeat 9px;
+ 		background-size:25px;
+ 		margin-bottom:15px;
+ 	}
+ 	.input2{
+ 		width:100%;
+ 		height: 40px;
+ 		border: 1px solid #d3d3d3;
+ 		padding:10px;
+ 		padding-left:45px;
+ 		background: url(../images/22.png)no-repeat 9px;
+ 		background-size:25px;
+ 		margin-bottom:15px;
+ 	}
+ 	.login-contant h4{
+ 		display: none;
+ 		margin-bottom:15px;
+ 		font-size:15px;
+ 		color:#fff;
+ 		width:40%;
+ 		margin-left: 30%;
+ 		text-align: center;
+ 		line-height: 30px;
+ 		border-radius: 5px;
+ 		height: 30px;
+ 		background: rgba(0,0,0,0.6);
+ 	}
+ 	.button{
+ 		width:310px;
+ 		height: 40px;
+ 		background: #3176ac;
+ 		color:#fff;
+ 		border-radius: 5px;
+ 		position: absolute;
+ 		bottom:20px;
+ 		left:30px;
+ 	}
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	  
+

@@ -1,0 +1,82 @@
+[ 2016-09-22T15:09:47+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/xinjian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.012000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_first` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 330 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 330 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 330 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant Xiangmu - assumed 'Xiangmu' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 146 行.
+NOTIC: [8] Use of undefined constant xinjian - assumed 'xinjian' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 146 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 146 行.
+NOTIC: [8] Undefined index: name E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 150 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 172 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 202 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 210 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 217 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 225 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 230 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 238 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 245 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 252 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 258 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 264 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 271 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 279 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 287 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 295 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 303 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 311 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 319 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 327 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 335 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 343 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 351 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 361 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 369 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 377 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 385 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 393 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 401 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 408 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 416 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 424 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 433 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 436 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 440 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 451 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 457 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 463 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 469 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 475 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 481 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

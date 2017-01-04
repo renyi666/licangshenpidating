@@ -1,0 +1,354 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+	<div class="main-title">
+		<h2>交通商务办</h2>
+	</div>
+	<!--<div class="cf">-->
+
+		<!--<div>-->
+			<!--<form action="{:U('Xiangmu/sousuo')}" method="post">-->
+				<!--分类：-->
+				<!--<select name="fenlei"id="fenlei">-->
+				<!--<option value=''></option>-->
+				<!--<volist name="fenlei" id="fenlei">-->
+					<!--<option value='{$fenlei['name']}'>{$fenlei.name}</option>-->
+					<!--</volist>-->
+			<!--</select>-->
+			<!--&lt;!&ndash;&ndash;&gt;-->
+				<!--&lt;!&ndash;责任单位：&ndash;&gt;-->
+				<!--&lt;!&ndash;<select name="company"id="company">&ndash;&gt;-->
+					<!--&lt;!&ndash;<option value=''></option>&ndash;&gt;-->
+				<!--&lt;!&ndash;<volist name="company" id="company">&ndash;&gt;-->
+					<!--&lt;!&ndash;<option value='{$company['company']}'>{$company.company}</option>&ndash;&gt;-->
+					<!--&lt;!&ndash;</volist>&ndash;&gt;-->
+			<!--&lt;!&ndash;</select>&ndash;&gt;-->
+				<!--&lt;!&ndash;责任人：&ndash;&gt;-->
+					<!--&lt;!&ndash;<select name="man"id="man">&ndash;&gt;-->
+					<!--&lt;!&ndash;<option value=''></option>&ndash;&gt;-->
+				<!--&lt;!&ndash;<volist name="q" id="q">&ndash;&gt;-->
+					<!--&lt;!&ndash;&ndash;&gt;-->
+					<!--&lt;!&ndash;<option value=' {$q['man']}'>{$q.man}</option>&ndash;&gt;-->
+					<!--&lt;!&ndash;</volist>&ndash;&gt;-->
+			<!--&lt;!&ndash;</select>&ndash;&gt;-->
+				<!--</br></br>-->
+
+				<!--创建日期：-->
+				<!--<input type="text" name="time1" class="text time" value="" placeholder="请选择时间" />-->
+
+				<!--<input type="text" name="time2" class="text time" value="" placeholder="请选择时间" />-->
+
+				<!--&lt;!&ndash;<input type="checkbox" name="new" value="是" />&ndash;&gt;-->
+				<!--&lt;!&ndash;显示最新进展情况	</br>&ndash;&gt;-->
+                <!--<div class="form-item">-->
+                    <!--<label class="item-label">项目情况</label>-->
+                    <!--<div class="controls">-->
+                        <!--<label class="checkbox">-->
+                            <!--<input type="checkbox" name="help" value="是"/>-->
+                         <!--是否需要协调-->
+                        <!--</label>-->
+                        <!--<label class="checkbox">-->
+                            <!--<input type="checkbox" name="action" value="是" />-->
+                            <!--是否开工-->
+                        <!--</label>-->
+
+                    <!--</div>-->
+					<!--<div class="controls">-->
+						<!--<label class="checkbox">-->
+							<!--<input type="checkbox" name="major" value="是"/>-->
+							<!--市重点项目-->
+						<!--</label>-->
+						<!--<label class="checkbox">-->
+							<!--<input type="checkbox" name="major2" value="是" />-->
+							<!--市政务办现场会项目-->
+						<!--</label>-->
+
+					<!--</div>   <div class="controls">-->
+					<!--<label class="checkbox">-->
+						<!--<input type="checkbox" name="major3" value="是"/>-->
+						<!--区重点项目-->
+					<!--</label>-->
+					<!--<label class="checkbox">-->
+						<!--<input type="checkbox" name="major4" value="是" />-->
+						<!--区局联席会项目-->
+					<!--</label>-->
+
+
+                <!--</div>-->
+
+				<!--<input type="submit" value="查询" />-->
+
+			<!--</form>-->
+		<!--</div>-->
+		<!--<br />-->
+
+		<div><a class="btn btn-warning " type="button"   id="test"href="{:U('Xiangmu/dayin_xuanze')}">打印所选记录</a>
+			<a class="btn" href="{:U('Xiangmu/dayin_disan',array('company'=>$map['company']))}">打印所有记录</a>
+
+		</div>
+		<!--&lt;!&ndash; 高级搜索 &ndash;&gt;-->
+		<!--<div class="search-form fr cf">-->
+			<!--<div class="sleft">-->
+				<!--<input type="text" name="id" class="search-input" value="{:I('id')}" placeholder="请输入项目编号">-->
+				<!--<a class="sch-btn" href="javascript:;" id="search" url="{:U('index')}"><i class="btn-search"></i></a>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+		<table class="">
+			<thead>
+				<tr>
+
+					<th class="row-selected row-selected">
+						<input class="check-all" type="checkbox">
+					</th>
+
+
+
+
+					<th class="">编号</th>
+					<th class="">项目名称</th>
+					<th class="">项目分类</th>
+					<th class="">项目位置</th>
+
+					<th class="">责任单位</th>
+					<th class="">责任人</th>
+					<th class="">联系电话</th>
+					<!--<th class="">最后登录IP</th>-->
+
+					<!--<th class="">目前工作进展情况</th>-->
+
+					<!--<th class="">下一步工作打算</th>-->
+					<!--<th class="">存在问题</th>-->
+
+					<!--<th class="">是否需要协调</th>-->
+					<!--<th class="">是否开工</th>-->
+
+					<!--<th class="">市重点项目</th>-->
+					<!--<th class="">市政务办现场会项目</th>-->
+					<!--<th class="">区重点项目</th>-->
+					<!--<th class="">区局联席会项目</th>-->
+
+					<!--<th class="">项目建设年度</th>-->
+					<!--<th class="">建设内容</th>-->
+					<!--<th class="">本月周进度计划安排</th>-->
+					<!--<th class="">立项手续完成时间及文号</th>-->
+					<!--<th class="">可研手续完成时间及文号</th>-->
+					<!--<th class="">初步设计手续完成时间及文号</th>-->
+					<!--<th class="">水土保持手续完成时间及文号</th>-->
+					<!--<th class="">土地手续完成时间及文号</th>-->
+					<!--<th class="">规划手续完成时间及文号</th>-->
+					<!--<th class="">环保手续完成时间及文号</th>-->
+					<!--<th class="">施工图预算审核完成时间</th>-->
+					<!--<th class="">完成设计招标时间</th>-->
+					<!--<th class="">完成施工监理招标时间</th>-->
+					<!--<th class="">建设周期</th>-->
+					<!--<th class="">2016年6月计划安排</th>-->
+					<!--<th class="">2016年7月计划安排</th>-->
+					<!--<th class="">2016年8月计划安排</th>-->
+					<!--<th class="">2016年9月计划安排</th>-->
+					<!--<th class="">2016年10月计划安排</th>-->
+					<!--<th class="">2016年11月计划安排</th>-->
+					<!--<th class="">2016年12月计划安排</th>-->
+					<!--<th class="">2016年年度资金需求</th>-->
+					<!--<th class="">2017年工期计划安排</th>-->
+					<!--<th class="">2017年资金需求</th>-->
+
+
+
+					<!--<th class="">更新日期</th>-->
+
+					<th class="">操作</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<notempty name="_list">
+					<volist name="_list" id="vo">
+						<tr>
+							<td><input class="ids" type="checkbox" value="{$vo['id']}" name="test"></td>
+							<td>{$vo.id} </td>
+							<td>{$vo.name}</td>
+							<td>{$vo.fenlei}</td>
+							<td>{$vo.location}</td>
+
+							<td>{$vo.company}</td>
+							<td>{$vo.man}</td>
+							<td>{$vo.phone}</td>
+
+							<!--<td>{$vo.work_progress}</td>-->
+							<!--<td>{$vo.next_plan}</td>-->
+
+							<!--<td>{$vo.problem}</td>-->
+
+							<!--<td>{$vo.help}</td>-->
+							<!--<td>{$vo.action}</td>-->
+
+							<!--<td>{$vo.major}</td>-->
+							<!--<td>{$vo.major2}</td>-->
+							<!--<td>{$vo.major3}</td>-->
+							<!--<td>{$vo.major4}</td>-->
+
+
+							<!--<td>{$vo.construction_year}</td>-->
+							<!--<td>{$vo.construction_content}</td>-->
+							<!--<td>{$vo.current_week}</td>-->
+							<!--<td>{$vo.finish_time1}</td>-->
+							<!--<td>{$vo.finish_time2}</td>-->
+							<!--<td>{$vo.finish_time3}</td>-->
+							<!--<td>{$vo.finish_time4}</td>-->
+							<!--<td>{$vo.finish_time5}</td>-->
+							<!--<td>{$vo.finsih_time6}</td>-->
+							<!--<td>{$vo.finsih_time7}</td>-->
+							<!--<td>{$vo.finsih_time8}</td>-->
+							<!--<td>{$vo.finsih_time9}</td>-->
+							<!--<td>{$vo.finsih_time10}</td>-->
+							<!--<td>{$vo.finsih_time11}</td>-->
+							<!--<td>{$vo.plan_01}</td>-->
+							<!--<td>{$vo.plan_02}</td>-->
+							<!--<td>{$vo.plan_03}</td>-->
+							<!--<td>{$vo.plan_04}</td>-->
+							<!--<td>{$vo.plan_05}</td>-->
+							<!--<td>{$vo.plan_06}</td>-->
+							<!--<td>{$vo.plan_07}</td>-->
+							<!--<td>{$vo.money_need}</td>-->
+							<!--<td>{$vo.next_year_plan}</td>-->
+							<!--<td>{$vo.money_need_next}</td>-->
+
+
+
+
+
+							<!--<td>{$vo.time}</td>-->
+
+							<td>
+							<eq name="vo.status" value="1">
+								<a href="{:U('Xiangmu/bianji',array('id'=>$vo['id']))}" >查看</a>
+
+								<!--<a href="{:U('Xiangmu/bianji',array('id'=>$vo['id'],'name'=>$vo['name'],'fenlei'=>$vo['fenlei'],'man'=>$vo['man'],'company'=>$vo['company'],'location'=>$vo['location'],'phone'=>$vo['phone'],'work_progress'=>$vo['work_progress'],'next_plan'=>$vo['next_plan'],'problem'=>$vo['problem']))}" >更新</a>-->
+
+								<!--<a href="{:U('Xiangmu/delete',array('id'=>$vo['id']))}" >删除</a>-->
+							</td>
+
+						</tr>
+					</volist>
+					<else/>
+
+				</notempty>
+			</tbody>
+		</table>
+	</div>
+	<div class="page">
+		{$_page}
+	</div>
+
+	<script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+
+</block>
+
+<block name="script">
+	<script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+	<link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+	<php>
+		if(C('COLOR_STYLE')=='blue_color') echo '
+		<link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">
+		';
+	</php>
+	<link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+
+//搜索功能
+$("#search").click(function(){
+var url = $(this).attr('url');
+var query  = $('.search-form').find('input').serialize();
+query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+query = query.replace(/^&/g,'');
+if( url.indexOf('?')>0 ){
+url += '&' + query;
+}else{
+url += '?' + query;
+}
+window.location.href = url;
+});
+
+$('#submit').click(function(){
+$('#form').submit();
+});
+
+$(function(){
+$('.date').datetimepicker({
+format: 'yyyy-mm-dd',
+language:"zh-CN",
+minView:2,
+autoclose:true
+});
+$('.time').datetimepicker({
+format: 'yyyy-mm-dd hh:ii',
+language:"zh-CN",
+minView:2,
+autoclose:true
+});
+showTab();
+//回车搜索
+$(".search-input").keyup(function(e){
+if(e.keyCode === 13){
+$("#search").click();
+return false;
+}
+});
+	$('#test').click(function(){
+
+		obj = document.getElementsByName("test");
+		check_val = [];
+		for(k in obj){
+			if(obj[k].checked)
+				check_val.push(obj[k].value);
+		}
+
+		$('#test').attr('href','{:U('Xiangmu/dayin_xuanze')}'+'&id='+check_val);
+
+	})
+//导航高亮
+highlight_subnav('{:U('User/index')}');
+
+});
+$('.tiaozhuan').click(function(){
+	var a=$('.page .current').text();
+
+	var url=$('.tiaozhuan').attr("href");
+	var p=$('#z').val();
+
+	if(a=='1'){
+		if(p=='1'){
+
+			$('.tiaozhuan').attr("href","/aaaa/admin.php?s=/Xiangmu/index.html");
+
+
+		}else {
+
+			url=url.substr(0,30);
+			url=url+"/p/"+p+".html";
+
+			$('.tiaozhuan').attr("href",url);
+
+
+		}
+
+	}else {
+
+		url=url.substr(0,30);
+		url=url+"/p/"+p+".html";
+		$('.tiaozhuan').attr("href",url);
+
+	}
+
+
+
+})
+	</script>
+</block>

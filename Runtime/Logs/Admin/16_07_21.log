@@ -1,0 +1,464 @@
+[ 2016-07-21T17:39:25+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/major4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `major4` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `major4` = '是' ORDER BY create_time LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\1fbf60adb2a740d61d84670ce9c1fb1a.php 第 192 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\1fbf60adb2a740d61d84670ce9c1fb1a.php 第 194 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\1fbf60adb2a740d61d84670ce9c1fb1a.php 第 195 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\1fbf60adb2a740d61d84670ce9c1fb1a.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T17:39:25+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/major3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `major` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `major` = '是' ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 188 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 190 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 191 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T17:39:26+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/major3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `major` = '是' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `major` = '是' ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 188 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 190 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 191 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T17:39:26+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/major2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `major2` = '是' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `major2` = '是' ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T17:39:26+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/city_project.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `major` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `major` = '是' ORDER BY create_time LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\8e00c6aff1f34c5a2c7e9ca6355fec6f.php 第 188 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\8e00c6aff1f34c5a2c7e9ca6355fec6f.php 第 190 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\8e00c6aff1f34c5a2c7e9ca6355fec6f.php 第 191 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\8e00c6aff1f34c5a2c7e9ca6355fec6f.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T17:39:27+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/major2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `major2` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `major2` = '是' ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T17:39:27+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/major3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `major` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `major` = '是' ORDER BY create_time LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 188 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 190 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 191 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T17:39:27+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/major3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `major` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` WHERE `major` = '是' ORDER BY create_time LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 188 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 190 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 191 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\66a70299fa5e114cf8932e71c6374835.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T17:39:28+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T17:40:09+08:00 ] ::1 /aaaa/admin.php?s=/Next/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\NextController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 74 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\NextController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 262 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 264 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 265 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 266 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 262 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 264 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 265 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 266 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 262 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 264 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 265 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 266 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 262 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 264 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 265 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5e9d5ccb5a689bbac1ea25fce549fdf3.php 第 266 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T17:40:15+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T17:42:16+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with that of Admin\Controller\AdminController::delete() E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finsih_time6`,`finish_time7`,`finsih_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 255 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 257 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 258 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 259 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

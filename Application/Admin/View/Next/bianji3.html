@@ -1,0 +1,126 @@
+<extend name="Public/base" />
+
+<block name="body">
+
+	<form action="{:U(Next/bianji3)}" method="post">
+			项目名称：
+		<input type="text" name="name" value="{$fin['name']}" />
+		<br />
+
+		项目分类：
+		<select name="fenlei">
+				分类：
+			
+				
+				<volist name="fenlei" id="fenlei">
+
+					<option value='{$fenlei['name']}'     <if condition="$fin['fenlei'] eq $fenlei['name']"> selected="selected"
+   
+    </if>>{$fenlei.name}</option>
+					</volist></volist>
+		</select>
+		<br
+		/>
+
+		项目位置：
+
+		<input type="text" name="location"  value="{$fin['location']}"/>
+		<br
+		/>
+		<br />
+		责任单位：
+		<input type="text" name="company" value="{$fin['company']}" />
+		<br />
+		<br />
+		责任人：
+		<input type="text" name="man" value="{$fin['man']}" />
+		<br />
+		<br />
+		联系电话：
+		<input type="text" name="phone"  value="{$fin['phone']}"/>
+		<br />
+		<br />
+		目前工作进展情况：
+		<input type="text" name="work_progress" value="{$fin['work_progress']}"/>
+		<br />
+		<br />
+		下一步打算：
+		<input type="text" name="next_plan"value="{$fin['next_plan']}" />
+		<br />
+		<br />
+		存在问题：
+		<input type="text" name="problem"value="{$fin['problem']}" />
+		<br />
+		<br />
+		项目情况：
+		
+		<input type="checkbox" name="help" value="是"        
+   <if condition="$fin['help'] eq '是'"> checked
+   
+    </if> />
+		是否需要协调
+		
+		
+		<input type="checkbox" name="action" value="是" <if condition="$fin['action'] eq '是'"> checked
+   
+    </if>/>是否开工
+		<br />
+		<br />
+		<br />
+
+		项目类别：
+		<input type="checkbox" name="major" value="是"  <if condition="$fin['major'] eq '是'"> checked
+   
+    </if>/>
+		市重点项目
+		<input type="checkbox" name="major2" value="是"  <if condition="$fin['major2'] eq '是'"> checked
+   
+    </if>/>
+		市政务办现场会项目
+		<br />
+		<input type="checkbox" name="major3" value="是" <if condition="$fin['major3'] eq '是'"> checked
+   
+    </if> />
+		区重点项目
+		<input type="checkbox" name="major4" value="是"  <if condition="$fin['major4'] eq '是'"> checked
+   
+    </if>/>
+		区局联席会项目
+		<br />
+		<input type="hidden" name="id" value="{$fin['xiangmu_id']}">
+		<br />
+		<br />
+		</volist>
+		<input type="submit" name="save" value="保存" />
+		<a href="{:U('Next/index')}">取消</a>
+	</form>
+</block>
+
+<block name="script">
+	<script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+
+	<script type="text/javascript">
+		//搜索功能
+		$("#search").click(function() {
+			var url = $(this).attr('url');
+			var query = $('.search-form').find('input').serialize();
+			query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+			query = query.replace(/^&/g, '');
+			if (url.indexOf('?') > 0) {
+				url += '&' + query;
+			} else {
+				url += '?' + query;
+			}
+			window.location.href = url;
+		});
+		//回车搜索
+		$(".search-input").keyup(function(e) {
+			if (e.keyCode === 13) {
+				$("#search").click();
+				return false;
+			}
+		});
+		//导航高亮
+
+	</script>
+</block>

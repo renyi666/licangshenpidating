@@ -1,0 +1,35 @@
+[ 2016-08-14T14:36:12+08:00 ] ::1 /aaaa/index.php?s=/%20Home%20/%20User%20/%20login.html&username=gaoyuan&password=gaoyuan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块: Home 
+
+[ 2016-08-14T14:36:53+08:00 ] ::1 /aaaa/index.php?s=/%20User%20/%20login.html&username=gaoyuan&password=gaoyuan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块: User 
+
+[ 2016-08-14T14:42:25+08:00 ] ::1 /aaaa/index.php?s=/%20User%20/%20login.html&username=gaoyuan&password=gaoyuan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块: User 
+
+[ 2016-08-14T14:43:11+08:00 ] ::1 /aaaa/index.php?s=/%20User%20/%20login.html&username=gaoyuan&password=gaoyuan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块: User 
+
+[ 2016-08-14T14:44:45+08:00 ] ::1 /aaaa/index.php?s=/User/login.html&username=gaoyuan&password=gaoyuan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:User
+

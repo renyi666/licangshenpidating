@@ -1,0 +1,980 @@
+[ 2016-10-19T16:03:18+08:00 ] ::1 /aaaa/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0310s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+
+[ 2016-10-19T16:03:19+08:00 ] ::1 /aaaa/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-19T16:03:26+08:00 ] ::1 /aaaa/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_member` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`work_place`,`first_time`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `one_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `one_member` SET `login`=`login`+1,`last_login_time`='1476864205',`last_login_ip`='0' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_action` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_action_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `one_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','0','member','1','1476864205','gaoyuan在2016-10-19 16:03登录了后台') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given E:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `one_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1476777805 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-10-19T16:03:28+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:03:47+08:00 ] ::1 /aaaa/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:08:53+08:00 ] ::1 /aaaa/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+
+[ 2016-10-19T16:08:59+08:00 ] ::1 /aaaa/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_member` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`work_place`,`first_time`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `one_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `one_member` SET `login`=`login`+1,`last_login_time`='1476864538',`last_login_ip`='0' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_action` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_action_log` [ RunTime:0.0010s ]
+SQL: INSERT INTO `one_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','0','member','1','1476864538','gaoyuan在2016-10-19 16:08登录了后台') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given E:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `one_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1476778138 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-10-19T16:09:01+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-19T16:22:18+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/bianji/id/620.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu` WHERE `id` = 620  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_fenlei_stage` [ RunTime:0.0010s ]
+SQL: SELECT `stage_id` FROM `one_fenlei_stage` WHERE `fenlei_name` = '社会投资类'  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant stage_id - assumed 'stage_id' E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 2018 行.
+SQL: SHOW COLUMNS FROM `one_stage` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_stage` WHERE `id` IN ('1','2','3','4')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_first_stage` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_first_stage` WHERE `xiangmu_id` = 620 AND `stage` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_first_stage` WHERE `xiangmu_id` = 620 AND `stage` = 2  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `one_first_stage` WHERE `xiangmu_id` = 620 AND `stage` = 3  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `one_first_stage` WHERE `xiangmu_id` = 620 AND `stage` = 4  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SELECT `user_uid` FROM `one_xiangmu` WHERE `id` = 620  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\5f68bd977d901c4924175b54d6a65907.php 第 147 行.
+NOTIC: [8] Use of undefined constant bianji - assumed 'bianji' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\5f68bd977d901c4924175b54d6a65907.php 第 147 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\5f68bd977d901c4924175b54d6a65907.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-19T16:26:02+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/xinjian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_first` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant Xiangmu - assumed 'Xiangmu' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 146 行.
+NOTIC: [8] Use of undefined constant xinjian - assumed 'xinjian' E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 146 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 146 行.
+NOTIC: [8] Undefined index: name E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 150 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 172 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 202 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 210 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 217 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 225 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 230 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 238 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 245 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 252 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 258 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 264 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 271 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 279 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 287 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 295 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 303 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 311 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 319 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 327 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 335 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 343 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 351 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 361 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 369 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 377 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 385 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 393 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 401 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 408 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 416 行.
+NOTIC: [8] Undefined variable: result_1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 424 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 433 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 436 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 440 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 451 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 457 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 463 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 469 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 475 行.
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 481 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:26:03+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-19T16:26:04+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:26:05+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:26:06+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-19T16:26:07+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:26:08+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-19T16:26:09+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-19T16:26:10+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/city_project.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major` = '是' ORDER BY create_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\5ae299187f729e72707398d41afe5b9e.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:26:11+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/major2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major2` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major2` = '是' ORDER BY create_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\03a28cac76615929efda152cf4921423.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:26:13+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/major3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major3` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major3` = '是' ORDER BY create_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\b834eb92cd9008c8c0f23bbd2b0ac721.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:26:14+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/major3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major3` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major3` = '是' ORDER BY create_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\b834eb92cd9008c8c0f23bbd2b0ac721.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:26:15+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/major4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major4` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major4` = '是' ORDER BY create_time desc LIMIT 0,12   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\cc4b7445c6cfd5c2342ec498bbaa221c.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:26:16+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/major4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major4` = '是' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 AND `major4` = '是' ORDER BY create_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\cc4b7445c6cfd5c2342ec498bbaa221c.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-19T16:26:17+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/haimian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 AND `haimian` = '是' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 AND `haimian` = '是' ORDER BY create_time desc LIMIT 0,12   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: r1 E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f35b36b8df9ff009bf397d0b36788e2d.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-19T16:26:36+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:26:44+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index/pgv_pvi/1329485824/Hm_lvt_90c03209a96512a48c732354120dc956/1476149731%2C1476162890/PHPSESSID/pt74ld2db11kil2cbvqbsu5pe1/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 12,12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-19T16:26:46+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index/pgv_pvi/1329485824/Hm_lvt_90c03209a96512a48c732354120dc956/1476149731%2C1476162890/PHPSESSID/pt74ld2db11kil2cbvqbsu5pe1/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`total_money` FROM `one_xiangmu` WHERE `user_uid` = 1 ORDER BY create_time desc  LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 303 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 335 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: now E:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

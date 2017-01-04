@@ -1,0 +1,238 @@
+<extend name="Base/common"/>
+<script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+
+
+<block name="body">
+
+    <div class="cf" style="float: left;">
+        <div class="fl" style="float: right;">
+            <a class="btn btn-warning " type="button"   id="test"href="{:U('Index/dayin_xuanze')}">打印所选记录</a>
+            <!--<a class="btn btn-success " type="button" href="{:U('Index/xinjian')}">新增项目</a>-->
+            <a class="btn btn-success " type="button" href="{:U('Index/dayin_major')}" style="margin-left:20px;">打印当前记录</a>
+        </div>
+        <!--<div>-->
+            <!--<form action="{:U('Index/sousuo')}" method="post">-->
+
+                <!--创建日期：-->
+                <!--<input type="text" name="time1" class="text time" value="" placeholder="请选择时间" />-->
+
+                <!--<input type="text" name="time2" class="text time" value="" placeholder="请选择时间" />-->
+                <!--<input type="submit" value="查询" class="btn btn-success "style="margin-left:20px"/>-->
+                <!--<div class="checkbox">-->
+                    <!--<label>-->
+                        <!--<input type="checkbox" name="new" value="是">-->
+                        <!--是否显示最新进展 </label>-->
+                <!--</div>-->
+                <!--<div class="form-item">-->
+                    <!--&lt;!&ndash;<label class="item-label"></label>&ndash;&gt;-->
+                    <!--<div class="controls" style="padding-left:20px">-->
+                        <!--<label class="checkbox">-->
+                            <!--<input type="checkbox" name="help" value="是"-->
+                            <!--/>-->
+                            <!--是否需要协调 </label>-->
+                        <!--<label class="checkbox">-->
+                            <!--<input type="checkbox" name="action" value="是" <if condition="$r1['action'] eq '是'"> checked-->
+
+                        <!--</if>/>-->
+                            <!--是否开工 </label>-->
+
+                    <!--</div>-->
+
+                <!--</div>-->
+
+
+            <!--</form>-->
+        <!--</div>-->
+        <!-- 数据列表 -->
+        <div class="data-table table-striped">
+            <table class="table table-bordered">
+                <thead>
+                <tr><th class="row-selected row-selected">
+                    <input class="check-all" type="checkbox">
+                </th>
+
+                    <th class="">编号</th>
+                    <th class="">名称</th>
+                    <!--<th class="">分类</th>-->
+                    <th class="">位置</th>
+
+                    <th class="">责任单位</th>
+                    <th class="">责任人</th>
+                    <th class="">联系电话</th>
+                    <!--<th class="">最后登录IP</th>-->
+
+                    <!--<th class="">目前工作进展情况</th>-->
+
+                    <!--<th class="">下一步工作打算</th>-->
+                    <!--<th class="">存在问题</th>-->
+
+                    <!--<th class="">是否需要协调</th>-->
+                    <!--<th class="">是否开工</th>-->
+
+                    <!--<th class="">市重点项目</th>-->
+                    <!--<th class="">市政务办现场会项目</th>-->
+                    <!--<th class="">区重点项目</th>-->
+                    <!--<th class="">区局联席会项目</th>-->
+                    <!--<th class="">海绵城市建设项目</th>-->
+                    <!--<th class="">是否通过审批</th>-->
+                    <!--<th class="">更新日期</th>-->
+                    <th class="">操作</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <notempty name="_list">
+                    <volist name="_list" id="vo">
+                        <tr><td><input class="ids" type="checkbox" value="{$vo['id']}" name="test"></td>
+
+                            <td>{$vo.id}</td>
+                            <td>{$vo.name}</td>
+                            <!--<td>{$vo.fenlei}</td>-->
+                            <td>{$vo.location}</td>
+
+                            <td>{$vo.company}</td>
+                            <td>{$vo.man}</td>
+                            <td>{$vo.phone}</td>
+
+                            <!--<td>{$vo.work_progress}</td>-->
+                            <!--<td>{$vo.next_plan}</td>-->
+
+                            <!--<td>{$vo.problem}</td>-->
+
+                            <!--<td>{$vo.help}</td>-->
+                            <!--<td>{$vo.action}</td>-->
+
+                            <!--<td>{$vo.major}</td>-->
+                            <!--<td>{$vo.major2}</td>-->
+                            <!--<td>{$vo.major3}</td>-->
+                            <!--<td>{$vo.major4}</td>-->
+                            <!--<td>{$vo.haimian}</td>-->
+                            <!--<td>{$vo.shenpi}</td>-->
+                            <!--<td>{$vo.time}</td>-->
+
+                            <td>
+                                <!--<a href="{:U('Index/xiangmu_copy_chakan',array('id'=>$vo['id'],'name'=>$vo['name'],'fenlei'=>$vo['fenlei'],'user_uid'=>$vo['user_uid']))}" >查看</a>-->
+                                <!--<br />-->
+                                <a href="{:U('Index/bianji',array('id'=>$vo['id']))}" >查看</a>
+                            </td>
+
+                        </tr>
+                    </volist>
+                    <else/>
+
+                </notempty>
+                </tbody>
+            </table>
+        </div>
+        <div class="page">
+
+            {$_page}
+        </div>
+
+        <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+
+</block>
+
+<block name="script">
+    <script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+    <link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+    <php>
+        if(C('COLOR_STYLE')=='blue_color') echo '
+        <link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">
+        ';
+    </php>
+    <link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+
+        //搜索功能
+        $("#search").click(function(){
+            var url = $(this).attr('url');
+            var query  = $('.search-form').find('input').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+
+        $('#submit').click(function(){
+            $('#form').submit();
+        });
+
+        $(function(){
+            $('.date').datetimepicker({
+                format: 'yyyy-mm-dd',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true
+            });
+            $('.time').datetimepicker({
+                format: 'yyyy-mm-dd hh:ii',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true
+            });
+            $('#test').click(function(){
+
+                obj = document.getElementsByName("test");
+                check_val = [];
+                for(k in obj){
+                    if(obj[k].checked)
+                        check_val.push(obj[k].value);
+                }
+
+                $('#test').attr('href','{:U('Index/dayin_xuanze')}'+'&id='+check_val);
+
+            })
+//回车搜索
+            $(".search-input").keyup(function(e){
+                if(e.keyCode === 13){
+                    $("#search").click();
+                    return false;
+                }
+            });
+
+        });
+        $('.tiaozhuan').click(function(){
+            var a=$('.page .current').text();
+
+            var url=$('.tiaozhuan').attr("href");
+            var p=$('#z').val();
+
+            if(a=='1'){
+                if(p=='1'){
+
+                    $('.tiaozhuan').attr("href","/aaaa/index.php?s=/Home/Index/index.html");
+
+
+                }else {
+
+                    url=url.substr(0,37);
+                    url=url+"/p/"+p+".html";
+
+
+                    $('.tiaozhuan').attr("href",url);
+
+
+                }
+
+            }else {
+
+                url=url.substr(0,37);
+                url=url+"/p/"+p+".html";
+
+                $('.tiaozhuan').attr("href",url);
+
+            }
+
+
+
+        })
+    </script>
+
+</block>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>选择</th>
+        <th>编号</th>
+    <th>项目名称</th>
+    </tr>
+    <volist name="_list" id="vo">
+    <tr>
+<div name="list">
+<td><input type="checkbox"  id="test" value="{$vo['id']}"></td>
+</div>
+        <td>{$vo.id}</td>
+        <td>{$vo.name}</td>
+
+
+    </tr>
+
+    </volist>
+
+</table>
+<!--<input type="checkbox" id="all">-->
+<input type="button" id="selectAll" value="ceshi"><br>
+<!--<input type="button" id="othercheck" value="反选"><br>-->
+
+<!--<a href="{:U('dayin_xuanze')}">打印</a>-->
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+
+//    function  ceshi() {
+//
+//        alert("aaa");
+//        var b= document.getElementById("list").value;
+//        alert(b);
+//    };
+   $("#selectAll").click(function () {
+      alert( $("#test").val());
+       alert('aa');
+   });
+</script>
+</html>

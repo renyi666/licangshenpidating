@@ -1,0 +1,203 @@
+<extend name="Base/common"/>
+
+<block name="body">
+	<div class="span9">
+		<!-- Contents
+		================================================== -->
+		<section id="contents">
+			<article:list name="article" category="1" child="true">
+				<div class="">
+					<h3><a href="{:U('Article/detail?id='.$article['id'])}">{$article.title}</a></h3>
+				</div>
+				<div>
+					<p class="lead">
+						{$article.description}
+					</p>
+				</div>
+				<div>
+					<span><a href="{:U('Article/detail?id='.$article['id'])}">查看全文</a></span>
+					<span class="pull-right"> <span class="author">{$article.uid|get_username}</span> <span>于 {$article.create_time|date='Y-m-d H:i',###}</span> 发表在 <span> <a href="{:U('Article/lists?category='.get_category_name($article['category_id']))}">{$article.category_id|get_category_title}</a></span> ( 阅读：{$article.view} ) </span>
+				</div>
+				<hr/>
+			</article:list>
+
+		</section>
+	</div>
+	<div class="cf">
+		<div class="fl">
+
+			<a class="btn btn-success" href="{:U('dayin_sousuo_xiangmu_copy')}">打印当前记录</a>
+
+		</div>
+
+			<a class="btn btn-success" href="{:U('bianji4',array('xiangmu_id'=>$bb))}">新建更新状态</a>
+
+
+		<div>
+			<form action="{:U('Index/sousuo_xiangmu_copy')}" method="post">
+
+				创建日期：
+				<input type="text" name="time1" class="text time" value="" placeholder="请选择时间" />
+
+				<input type="text" name="time2" class="text time" value="" placeholder="请选择时间" />
+				<volist name="_list" id="vo">
+					<input type="hidden" name="xiangmu_id" value="{$vo.xiangmu_id}" />
+
+				</volist>
+				<input type="submit" name="submit" value="查询" class="btn btn-success " style="margin-left:20px">
+			</form>
+
+		</div>
+		<br />
+
+		<!-- 高级搜索 -->
+
+	</div>
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+		<table class="table table-bordered">
+
+			<thead>
+				<tr>
+
+					<th class="">编号</th>
+					<th class="">名称</th>
+					<th class="">分类</th>
+					<th class="">位置</th>
+
+					<th class="">责任单位</th>
+					<th class="">责任人</th>
+					<th class="">联系电话</th>
+					<!--<th class="">最后登录IP</th>-->
+
+					<th class="">目前工作进展情况</th>
+
+					<th class="">下一步工作打算</th>
+					<th class="">存在问题</th>
+
+					<th class="">是否需要协调</th>
+					<th class="">是否开工</th>
+
+					<th class="">市重点项目</th>
+					<th class="">市政务办现场会项目</th>
+					<th class="">区重点项目</th>
+					<th class="">区局联席会项目</th>
+					<th class="">海绵城市建设项目</th>
+
+					<th class="">是否通过审批</th>
+
+					<th class="">更新日期</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<notempty name="_list">
+					<volist name="_list" id="vo">
+						<tr>
+
+							<td>{$vo.xiangmu_id}</td>
+							<td>{$vo.name}</td>
+							<td>{$vo.fenlei}</td>
+							<td>{$vo.location}</td>
+
+							<td>{$vo.company}</td>
+							<td>{$vo.man}</td>
+							<td>{$vo.phone}</td>
+
+							<td>{$vo.work_progress}</td>
+							<td>{$vo.next_plan}</td>
+
+							<td>{$vo.problem}</td>
+
+							<td>{$vo.help}</td>
+							<td>{$vo.action}</td>
+
+							<td>{$vo.major}</td>
+							<td>{$vo.major2}</td>
+							<td>{$vo.major3}</td>
+							<td>{$vo.major4}</td>
+							<td>{$vo.haimian}</td>
+							<td>{$vo.shenpi}</td>
+							<td>{$vo.time}</td>
+
+							<td><eq name="vo.status" value="1">
+
+							</td>
+
+						</tr>
+					</volist>
+
+					<else/>
+
+				</notempty>
+			</tbody>
+		</table>
+	</div>
+	<div class="page">
+		{$_page}
+	</div>
+
+	<script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+
+</block>
+
+<block name="script">
+	<script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+	<link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+	<php>
+		if(C('COLOR_STYLE')=='blue_color') echo '
+		<link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">
+		';
+	</php>
+	<link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+
+//搜索功能
+$("#search").click(function(){
+var url = $(this).attr('url');
+var query  = $('.search-form').find('input').serialize();
+query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+query = query.replace(/^&/g,'');
+if( url.indexOf('?')>0 ){
+url += '&' + query;
+}else{
+url += '?' + query;
+}
+window.location.href = url;
+});
+
+$('#submit').click(function(){
+$('#form').submit();
+});
+
+$(function(){
+$('.date').datetimepicker({
+format: 'yyyy-mm-dd',
+language:"zh-CN",
+minView:2,
+autoclose:true
+});
+$('.time').datetimepicker({
+format: 'yyyy-mm-dd hh:ii',
+language:"zh-CN",
+minView:2,
+autoclose:true
+});
+showTab();
+//回车搜索
+$(".search-input").keyup(function(e){
+if(e.keyCode === 13){
+$("#search").click();
+return false;
+}
+});
+//导航高亮
+highlight_subnav('{:U('User/index')}');
+
+});
+	</script>
+</block>
+
+</block>

@@ -1,0 +1,1482 @@
+[ 2016-09-05T17:20:23+08:00 ] ::1 /aaaa/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:20:23+08:00 ] ::1 /aaaa/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:20:23+08:00 ] ::1 /aaaa/admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:20:25+08:00 ] ::1 /aaaa/admin.php?s=/Public/verify.html&random=0.5134547575091664
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:20:27+08:00 ] ::1 /aaaa/admin.php?s=/Public/verify.html&random=0.11320872564019102
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:20:31+08:00 ] ::1 /aaaa/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_member` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`nickname`,`work_place`,`first_time`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `one_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_action` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_action_log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `one_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','0','member','1','1473067230','gaoyuan在2016-09-05 17:20登录了后台') [ RunTime:0.0110s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given E:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `one_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1472980830 LIMIT 1   [ RunTime:0.0050s ]
+SQL: UPDATE `one_member` SET `login`=`login`+1,`last_login_time`='1473067230',`last_login_ip`='0' WHERE `uid` = 1 [ RunTime:0.0000s ]
+
+[ 2016-09-05T17:20:32+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`url` FROM `one_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0100s ]
+SQL: SELECT `pid` FROM `one_menu` WHERE ( pid !=0 AND url like '%Xiangmu/index%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `one_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `one_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `one_menu` WHERE `group` = '项目管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `one_menu` WHERE `group` = '责任单位' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `one_menu` WHERE `group` = '打印' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:20:36+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index/Hm_lvt_2b56bcd7b30b38d868b02a851e8d45da/1472198411/PHPSESSID/m8r43gmedorsaj4tnev3srol77/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` ORDER BY create_time LIMIT 10,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:26:10+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index/Hm_lvt_2b56bcd7b30b38d868b02a851e8d45da/1472198411/PHPSESSID/m8r43gmedorsaj4tnev3srol77/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` ORDER BY create_time LIMIT 20,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:38:34+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:40:05+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-05T17:40:06+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:40:07+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/jianguan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty_member` [ RunTime:0.0150s ]
+SQL: SELECT `user_uid` FROM `one_duty_member` WHERE ( duty_id=3 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` IN ('3','7','18') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` WHERE `user_uid` IN ('3','7','18') ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: company E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 106 行.
+NOTIC: [8] Undefined variable: q E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 113 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:40:09+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/jiaoti.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty_member` [ RunTime:0.0010s ]
+SQL: SELECT `user_uid` FROM `one_duty_member` WHERE ( duty_id=8 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: company E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\1d09454fc174f7c7d9daea616fcb5182.php 第 106 行.
+NOTIC: [8] Undefined variable: q E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\1d09454fc174f7c7d9daea616fcb5182.php 第 113 行.
+NOTIC: [8] Undefined variable: _page E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\1d09454fc174f7c7d9daea616fcb5182.php 第 317 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:40:25+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:40:35+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/jianguan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_duty_member` [ RunTime:0.0010s ]
+SQL: SELECT `user_uid` FROM `one_duty_member` WHERE ( duty_id=3 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` IN ('3','7','18') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` WHERE `user_uid` IN ('3','7','18') ORDER BY create_time LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: company E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 106 行.
+NOTIC: [8] Undefined variable: q E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 113 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 279 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 280 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 281 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 282 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 283 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\5be93adf922edbef46b9b32e419a6926.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:42:18+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T17:42:21+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index/Hm_lvt_2b56bcd7b30b38d868b02a851e8d45da/1472198411/PHPSESSID/m8r43gmedorsaj4tnev3srol77/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` ORDER BY create_time LIMIT 10,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-05T22:31:35+08:00 ] ::1 /aaaa/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-05T22:31:35+08:00 ] ::1 /aaaa/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-05T22:31:35+08:00 ] ::1 /aaaa/admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-05T22:31:42+08:00 ] ::1 /aaaa/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_member` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`work_place`,`first_time`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `one_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_action` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_action_log` [ RunTime:0.0010s ]
+SQL: INSERT INTO `one_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','0','member','1','1473085901','gaoyuan在2016-09-05 22:31登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given E:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `one_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1472999501 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `one_member` SET `login`=`login`+1,`last_login_time`='1473085901',`last_login_ip`='0' WHERE `uid` = 1 [ RunTime:0.0000s ]
+
+[ 2016-09-05T22:31:43+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_menu` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`url` FROM `one_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `one_menu` WHERE ( pid !=0 AND url like '%Xiangmu/index%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `one_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `one_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `one_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `one_menu` WHERE `group` = '项目管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `one_menu` WHERE `group` = '责任单位' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `one_menu` WHERE `group` = '打印' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` ORDER BY create_time LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-05T22:31:55+08:00 ] ::1 /aaaa/admin.php?s=/Xiangmu/index/Hm_lvt_2b56bcd7b30b38d868b02a851e8d45da/1472198411/PHPSESSID/29gp109s0ov4s4uap89gc5l722/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\XiangmuController::delete() should be compatible with Admin\Controller\AdminController::delete($model, $where = Array, $msg = Array) E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_duty`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: -1 E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: i E:\phpStudy\WWW\aaaa\Application\Admin\Controller\XiangmuController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`haimian`,`shenpi`,`user_uid`,`time`,`create_time`,`construction_year`,`construction_content`,`current_week`,`finish_time1`,`finish_time2`,`finish_time3`,`finish_time4`,`finish_time5`,`finish_time6`,`finish_time7`,`finish_time8`,`finish_time9`,`finish_time10`,`finish_time11`,`plan_01`,`plan_02`,`plan_03`,`plan_04`,`plan_05`,`plan_06`,`plan_07`,`money_need`,`next_year_plan`,`money_need_next`,`fenlei_id` FROM `one_xiangmu` ORDER BY create_time LIMIT 10,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+NOTIC: [8] Undefined index: finsih_time6 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 287 行.
+NOTIC: [8] Undefined index: finsih_time7 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 288 行.
+NOTIC: [8] Undefined index: finsih_time8 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 289 行.
+NOTIC: [8] Undefined index: finsih_time9 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 290 行.
+NOTIC: [8] Undefined index: finsih_time10 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 291 行.
+NOTIC: [8] Undefined index: finsih_time11 E:\phpStudy\WWW\aaaa\Runtime\Cache\Admin\cf5d7d5654234116fd140ebe358e7ebc.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

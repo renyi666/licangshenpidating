@@ -1,0 +1,370 @@
+<extend name="Base/common"/>
+
+<block name="body">
+
+	<form action="{:U(Index/bianji3)}" method="post" style="padding-top:20px">
+		<div class="bianji">
+			<span>项目名称</span>
+
+			<input type="text" name="name" value="{$result_1['0']['name']}"  readonly="true"/>
+		</div>
+		<div class="bianji">
+			<span>项目分类：</span>
+			<select name="fenlei">
+				分类：
+	
+				<volist name="fenlei" id="fenlei">
+	
+						<option value='{$fenlei['name']}'     <if condition="$result_1['0']['fenlei'] eq $fenlei['name']"> selected="selected"
+	
+						</if>>{$fenlei.name}</option>
+	
+				</volist>
+			</select>
+		</div>
+		<div class="bianji">
+			<span>项目位置：</span>
+			<input type="text" name="location"  value="{$result_1['0']['location']}"/>
+		</div>
+		<div class="bianji">
+			<span>项目单位</span>
+			<div class="controls">
+				<select name="company" class="select">
+
+
+					<volist name="company" id="company">
+						<volist name="result_1" id="r1">
+							<option value='{$company['name']}'  <if condition="$r1['company'] eq $company['company']"> selected="selected"
+
+						</if>
+
+							>{$company.company}</option>
+						</volist></volist>
+					<option value="another" class="another">其他</option>
+				</select>
+			</div>
+
+		</div>
+
+
+
+
+
+		<div class="bianji1"><span></span>
+			<input type="text" class="shuru" name="shuru" placeholder="请输入项目单位">
+		</div>
+			<div class="bianji">
+			<span>责任人：</span>
+			<input type="text" name="man" value="{$result_1['0']['man']}" />
+		</div>
+		<div class="bianji">
+			<span>
+				联系电话：
+			</span>
+			<input type="text" name="phone"  value="{$result_1['0']['phone']}"/>
+		</div>
+		<div class="bianji">
+			<span>
+				目前工作进展情况：
+			</span>
+			<input type="text" name="work_progress" value="{$result_1['0']['work_progress']}"/>
+		</div>
+		<div class="bianji">
+			<span>下一步打算：</span>
+			<input type="text" name="next_plan"value="{$result_1['0']['next_plan']}" />
+		</div>
+		<div class="bianji" style="height:150px;">
+			<span>存在问题：</span>
+			<textarea name="problem">{$result_1['0']['problem']}</textarea>
+		</div>
+	<div class="bianji">
+				<span>项目建设年度</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="construction_year" value="{$result_1['0']['construction_year']}" />
+			</div>
+
+		</div>
+		<div class="bianji">
+			<span>建设内容</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="construction_content" value="{$result_1['0']['construction_content']}" />
+			</div>
+
+		</div>
+		<!--<div class="bianji">-->
+			<!--<span>本月周进度计划安排</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="current_week" value="{$result_1['0']['current_week']}" />-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="bianji">-->
+			<!--<span>立项手续完成时间及文号</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time1" value="{$result_1['0']['finish_time1']}" />-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="bianji">-->
+			<!--<span>可研手续完成时间及文号</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time2" value="{$result_1['0']['finish_time2']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="bianji">-->
+			<!--<span>初步设计手续完成时间及文号</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time3" value="{$result_1['0']['finish_time3']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+		<!--<div class="bianji">-->
+			<!--<span>水土保持手续完成时间及文号</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time4" value="{$result_1['0']['finish_time4']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+		<!--<div class="bianji">-->
+			<!--<span>土地手续完成时间及文号</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time5" value="{$result_1['0']['finish_time5']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+		<!--<div class="bianji">-->
+			<!--<span>规划手续完成时间及文号</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time6" value="{$result_1['0']['finish_time6']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+		<!--<div class="bianji">-->
+			<!--<span>环保手续完成时间及文号</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time7" value="{$result_1['0']['finish_time7']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+		<!--<div class="bianji">-->
+			<!--<span>施工图预算审核完成时间</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time8" value="{$result_1['0']['finish_time8']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+		<!--<div class="bianji">-->
+			<!--<span>完成设计招标时间</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time9" value="{$result_1['0']['finish_time9']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+		<!--<div class="bianji">-->
+			<!--<span>完成施工监理招标时间</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time10" value="{$result_1['0']['finish_time10']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+		<!--<div class="bianji">-->
+			<!--<span>建设周期</span>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time11" value="{$result_1['0']['finish_time11']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+		<div class="bianji">
+			<span>2016年6月计划安排</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="plan_01" value="{$result_1['0']['plan_01']}" />
+			</div>
+
+		</div>
+
+		<div class="bianji">
+			<span>2016年7月计划安排</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="plan_02" value="{$result_1['0']['plan_02']}" />
+			</div>
+
+		</div>
+
+
+
+		<div class="bianji">
+			<span>2016年8月计划安排</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="plan_03" value="{$result_1['0']['plan_03']}" />
+			</div>
+
+		</div>
+
+		<div class="bianji">
+			<span>2016年9月计划安排</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="plan_04" value="{$result_1['0']['plan_04']}" />
+			</div>
+
+		</div>
+
+		<div class="bianji">
+			<span>2016年10月计划安排</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="plan_05" value="{$result_1['0']['plan_05']}" />
+			</div>
+
+		</div>
+
+		<div class="bianji">
+			<span>2016年11月计划安排</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="plan_06" value="{$result_1['0']['plan_06']}" />
+			</div>
+
+		</div>
+
+		<div class="bianji">
+			<span>2016年12月计划安排</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="plan_07" value="{$result_1['0']['plan_07']}" />
+			</div>
+
+		</div>
+
+		<div class="bianji">
+			<span>2016年年度资金需求</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="money_need" value="{$result_1['0']['money_need']}" />
+			</div>
+
+		</div>
+
+		<div class="bianji">
+			<span>2017年计划安排</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="next_year_plan" value="{$result_1['0']['next_year_plan']}" />
+			</div>
+
+		</div>
+
+		<div class="bianji">
+			<span>2017年资金需求</span>
+			<div class="controls">
+				<input class="text input-large" type="text" name="money_need_next" value="{$result_1['0']['money_need_next']}" />
+			</div>
+		</div>
+		<div class="form-item">
+            <label class="item-label">项目情况：</label>
+            <div class="controls condition">
+                <label class="checkbox">
+					<input type="checkbox" name="help" value="是"
+						<if condition="$result_1['0']['help'] eq '是'"> checked</if>
+					/>
+					是否需要协调
+                </label>
+                <label class="checkbox">
+					<input type="checkbox" name="action" value="是" 
+						<if condition="$result_1['0']['action'] eq '是'"> checked</if>
+					/>
+					是否开工 
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" name="shenpi" value="是" <if condition="$r1['shenpi'] eq '是'"> checked
+
+				</if>/>
+					是否通过审批
+				</label>
+
+			</div>
+        </div>
+		<div class="project_sort">
+			<span>项目类别：</span>
+			<div class="project_sort_item">
+				<label class="checkbox">
+					<input type="checkbox" name="major" value="是"  
+						<if condition="$result_1['0']['major'] eq '是'"> checked</if>
+					/>
+					市重点项目
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" name="major2" value="是"  
+						<if condition="$result_1['0']['major2'] eq '是'"> checked</if>
+					/>
+					市政务办现场会项目 
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" name="major3" value="是" 
+						<if condition="$result_1['0']['major3'] eq '是'"> checked</if> 					/>
+					区重点项目 
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" name="major4" value="是"  
+						<if condition="$result_1['0']['major4'] eq '是'"> checked</if>
+					/>
+					区局联席会项目
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" name="haimian" value="是"
+					<if condition="$r1['haimian'] eq '是'"> checked</if>
+					/>
+					海绵城市建设项目
+				</label>
+			</div>
+		</div>
+
+		<input type="hidden" name="xiangmu_id" value="{$result_1['0']['xiangmu_id']}">
+		<input type="hidden" name="id" value="{$result_1['0']['id']}">
+
+		<input type="submit" name="save" value="保存" class="bt btn-success baocun"/>
+		<a href="{:U('Xiangmu/index')}">取消</a
+	</form>
+</block>
+
+<block name="script">
+	<script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+
+	<script type="text/javascript">
+		//搜索功能
+		$("#search").click(function() {
+			var url = $(this).attr('url');
+			var query = $('.search-form').find('input').serialize();
+			query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+			query = query.replace(/^&/g, '');
+			if (url.indexOf('?') > 0) {
+				url += '&' + query;
+			} else {
+				url += '?' + query;
+			}
+			window.location.href = url;
+		});
+		//回车搜索
+		$(".search-input").keyup(function(e) {
+			if (e.keyCode === 13) {
+				$("#search").click();
+				return false;
+			}
+		});
+		//导航高亮
+		$(document).ready(function(){
+			$(".select").change(function () {
+				var res=$(".select").val();
+				if(res=="another"){
+					$(".bianji1").show();
+
+				}
+
+			})
+
+
+		})
+	</script>
+</block>

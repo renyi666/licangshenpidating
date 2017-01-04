@@ -1,0 +1,315 @@
+<extend name="Public/base" />
+
+<block name="body">
+
+	<form class="form-horizontal" action="{:U(Next/bianji)}" method="post">
+		<div class="form-item">
+			<label class="item-label">项目名称</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="name" value="{$_GET['name']}"  />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">项目分类</label>
+			<div class="controls">
+				<select name="fenlei">
+					分类：
+
+
+
+                    <volist name="fenlei" id="fenlei">
+
+                            <option value='{$fenlei['name']}'     <if condition="$result_1['fenlei'] eq $fenlei['name']"> selected="selected"
+
+                        </if>>{$fenlei.name}</option>
+                        </volist>
+				</select>
+			</div>
+
+		</div>
+
+
+		<div class="form-item">
+			<label class="item-label">项目位置</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="location" value="{$result_1['location']}"  />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">责任单位</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="company" value="{$result_1['company']}"  />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">责任人</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="man" value="{$result_1['man']}" />
+			</div>
+
+		</div>
+
+		<div class="form-item">
+			<label class="item-label">联系电话</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="phone" value="{$result_1['phone']}"  />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">目前工作进展情况</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="work_progress" value="{$result_1['work_progress']}"  />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">下一步打算</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="next_plan" value="{$result_1['next_plan']}" />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">存在问题</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="problem" value="{$result_1['problem']}" />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">项目建设年度</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="construction_year" value="{$result_1['construction_year']}"  />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">建设内容</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="construction_content" value="{$result_1['construction_content']}"  />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">本月周进度计划安排</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="current_week" value="{$result_1['current_week']}"  />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">立项手续完成时间及文号</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="finish_time1" value="{$result_1['finish_time1']}"  />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">可研手续完成时间及文号</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="finish_time2" value="{$result_1['finish_time2']}"  />
+			</div>
+
+		</div>
+		<div class="form-item">
+			<label class="item-label">初步设计手续完成时间及文号</label>
+			<div class="controls">
+				<input class="text input-large" type="text" name="finish_time3" value="{$result_1['finish_time3']}"  />
+			</div>
+
+		</div>	<div class="form-item">
+		<label class="item-label">水土保持手续完成时间及文号</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="finish_time4" value="{$result_1['finish_time4']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">土地手续完成时间及文号</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="finish_time5" value="{$result_1['finish_time5']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">规划手续完成时间及文号</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="finsih_time6" value="{$result_1['finsih_time6']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">环保手续完成时间及文号</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="finish_time7" value="{$result_1['finish_time7']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">施工图预算审核完成时间</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="finsih_time8" value="{$result_1['finsih_time8']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">完成设计招标时间</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="finish_time9" value="{$result_1['finish_time9']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">完成施工监理招标时间</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="finish_time10" value="{$result_1['finish_time10']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">建设周期</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="finish_time11" value="{$result_1['finish_time11']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">2016年6月计划安排</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="plan_01" value="{$result_1['plan_01']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">2016年7月计划安排</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="plan_02" value="{$result_1['plan_02']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">2016年8月计划安排</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="plan_03" value="{$result_1['plan_03']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">2016年9月计划安排</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="plan_04" value="{$result_1['plan_04']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">2016年10月计划安排</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="plan_05" value="{$result_1['plan_05']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">2016年11月计划安排</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="plan_06" value="{$result_1['plan_06']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">2016年12月计划安排</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="plan_07" value="{$result_1['plan_07']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">2016年年度资金需求</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="money_need" value="{$result_1['money_need']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">2017年计划安排</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="next_year_plan" value="{$result_1['next_year_plan']}"  />
+		</div>
+
+	</div>	<div class="form-item">
+		<label class="item-label">2017年资金需求</label>
+		<div class="controls">
+			<input class="text input-large" type="text" name="money_need_next" value="{$result_1['money_need_next']}"  />
+		</div>
+
+
+
+		<div class="form-item">
+			<label class="item-label">项目情况</label>
+			<div class="controls">
+				<label class="checkbox">
+					<input type="checkbox" name="help" value="是"
+					<if condition="$result_1['help'] eq '是'"> checked
+
+					</if> />是否需要协调
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" name="action" value="是" <if condition="$result_1['action'] eq '是'"> checked
+
+				</if>/>
+					是否开工
+				</label>
+
+			</div>
+
+		</div>
+
+		项目情况：
+		
+
+
+		项目类别：
+		<input type="checkbox" name="major" value="是"  <if condition="$r1['major'] eq '是'"> checked
+   
+    </if>/>
+		市重点项目
+		<input type="checkbox" name="major2" value="是"  <if condition="$result_1['major2'] eq '是'"> checked
+   
+    </if>/>
+		市政务办现场会项目
+		<br />
+		<input type="checkbox" name="major3" value="是" <if condition="$result_1['major3'] eq '是'"> checked
+   
+    </if> />
+		区重点项目
+		<input type="checkbox" name="major4" value="是"  <if condition="$r1['major4'] eq '是'"> checked
+   
+    </if>/>
+
+		区局联席会项目
+		<br />
+		<input type="hidden" name="id" value="{$r1['id']}">
+		<br />
+		<br />
+		</volist>
+		<input type="text"  name="res_id" hidden value="{$res_id}">
+		<input type="submit" name="save" value="保存" />
+		<a href="{:U('Xiangmu/index')}">取消</a>
+	</form>
+</block>
+
+<block name="script">
+	<script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+
+	<script type="text/javascript">
+		//搜索功能
+		$("#search").click(function() {
+			var url = $(this).attr('url');
+			var query = $('.search-form').find('input').serialize();
+			query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+			query = query.replace(/^&/g, '');
+			if (url.indexOf('?') > 0) {
+				url += '&' + query;
+			} else {
+				url += '?' + query;
+			}
+			window.location.href = url;
+		});
+		//回车搜索
+		$(".search-input").keyup(function(e) {
+			if (e.keyCode === 13) {
+				$("#search").click();
+				return false;
+			}
+		});
+		//导航高亮
+
+	</script>
+</block>

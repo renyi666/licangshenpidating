@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9002a882-bd44-445c-822b-0e3e04d34e22" name="aa" url="http://120.27.119.140">
+        <fileTransfer host="120.27.119.140" port="22" rootFolder="/home/wwwroot/shell.51h1h.com" accessType="SFTP" password="dfeedfcbdfe4dfc3dfdfdf9adf9ddf9adf9b" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="6442f781-410a-4d45-9d1b-95bc23e7dd0b" name="new" url="http://139.129.213.187">
+        <fileTransfer host="139.129.213.187" port="22" rootFolder="/home/www/shell.51h1h.com" accessType="SFTP" password="dfeedfcbdfe4dfc3dfdfdf80dfeadf8bdf9adf9ddf9adf9b" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

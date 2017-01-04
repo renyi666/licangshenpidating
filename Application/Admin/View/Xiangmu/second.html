@@ -1,0 +1,770 @@
+<extend name="Public/base" />
+
+<block name="body">
+
+	<!--<form class="form-horizontal" action="{:U(Xiangmu/bianji)}" method="post">-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">项目名称</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="name" value="{$_GET['name']}"  />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">项目分类</label>-->
+			<!--<div class="controls">-->
+				<!--<select name="fenlei">-->
+					<!--分类：-->
+
+
+
+                    <!--<volist name="fenlei" id="fenlei">-->
+
+                            <!--<option value='{$fenlei['name']}'     <if condition="$result_1['fenlei'] eq $fenlei['name']"> selected="selected"-->
+
+                        <!--</if>>{$fenlei.name}</option>-->
+                        <!--</volist>-->
+				<!--</select>-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">项目位置</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="location" value="{$result_1['location']}"  />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">责任单位</label>-->
+			<!--<div class="controls">-->
+				<!--<select name="company">-->
+					<!--分类：-->
+
+
+
+					<!--<volist name="company" id="company">-->
+
+						<!--<option value='{$company['company']}'     <if condition="$result_1['company'] eq $company['company']"> selected="selected"-->
+
+					<!--</if>>{$company.company}</option>-->
+					<!--</volist>-->
+				<!--</select>-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">责任人</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="man" value="{$result_1['man']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">联系电话</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="phone" value="{$result_1['phone']}"  />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">目前工作进展情况</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="work_progress" value="{$result_1['work_progress']}"  />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">下一步打算</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="next_plan" value="{$result_1['next_plan']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">存在问题</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="problem" value="{$result_1['problem']}" />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">项目建设年度</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="construction_year" value="{$result_1['construction_year']}"  />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">建设内容</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="construction_content" value="{$result_1['construction_content']}"  />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">本月周进度计划安排</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="current_week" value="{$result_1['current_week']}"  />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">立项手续完成时间及文号</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time1" value="{$result_1['finish_time1']}"  />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">可研手续完成时间及文号</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time2" value="{$result_1['finish_time2']}"  />-->
+			<!--</div>-->
+
+		<!--</div>-->
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">初步设计手续完成时间及文号</label>-->
+			<!--<div class="controls">-->
+				<!--<input class="text input-large" type="text" name="finish_time3" value="{$result_1['finish_time3']}"  />-->
+			<!--</div>-->
+
+		<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">水土保持手续完成时间及文号</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="finish_time4" value="{$result_1['finish_time4']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">土地手续完成时间及文号</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="finish_time5" value="{$result_1['finish_time5']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">规划手续完成时间及文号</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="finish_time6" value="{$result_1['finsih_time6']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">环保手续完成时间及文号</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="finish_time7" value="{$result_1['finish_time7']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">施工图预算审核完成时间</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="finish_time8" value="{$result_1['finsih_time8']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">完成设计招标时间</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="finish_time9" value="{$result_1['finish_time9']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">完成施工监理招标时间</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="finish_time10" value="{$result_1['finish_time10']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">建设周期</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="finish_time11" value="{$result_1['finish_time11']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">2016年6月计划安排</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="plan_01" value="{$result_1['plan_01']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">2016年7月计划安排</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="plan_02" value="{$result_1['plan_02']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">2016年8月计划安排</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="plan_03" value="{$result_1['plan_03']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">2016年9月计划安排</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="plan_04" value="{$result_1['plan_04']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">2016年10月计划安排</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="plan_05" value="{$result_1['plan_05']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">2016年11月计划安排</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="plan_06" value="{$result_1['plan_06']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">2016年12月计划安排</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="plan_07" value="{$result_1['plan_07']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">2016年年度资金需求</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="money_need" value="{$result_1['money_need']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">2017年计划安排</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="next_year_plan" value="{$result_1['next_year_plan']}"  />-->
+		<!--</div>-->
+
+	<!--</div>	<div class="form-item">-->
+		<!--<label class="item-label">2017年资金需求</label>-->
+		<!--<div class="controls">-->
+			<!--<input class="text input-large" type="text" name="money_need_next" value="{$result_1['money_need_next']}"  />-->
+		<!--</div>-->
+
+
+
+		<!--<div class="form-item">-->
+			<!--<label class="item-label">项目情况</label>-->
+			<!--<div class="controls">-->
+				<!--<label class="checkbox">-->
+					<!--<input type="checkbox" name="help" value="是"-->
+					<!--<if condition="$result_1['help'] eq '是'"> checked-->
+
+					<!--</if> />是否需要协调-->
+				<!--</label>-->
+				<!--<label class="checkbox">-->
+					<!--<input type="checkbox" name="action" value="是" <if condition="$result_1['action'] eq '是'"> checked-->
+
+				<!--</if>/>-->
+					<!--是否开工-->
+				<!--</label>-->
+
+			<!--</div>-->
+
+		<!--</div>-->
+
+
+		<!---->
+
+
+		<!--项目类别：-->
+		<!--<input type="checkbox" name="major" value="是"  <if condition="$r1['major'] eq '是'"> checked-->
+   <!---->
+    <!--</if>/>-->
+		<!--市重点项目-->
+		<!--<input type="checkbox" name="major2" value="是"  <if condition="$result_1['major2'] eq '是'"> checked-->
+   <!---->
+    <!--</if>/>-->
+		<!--市政务办现场会项目-->
+		<!--<br />-->
+		<!--<input type="checkbox" name="major3" value="是" <if condition="$result_1['major3'] eq '是'"> checked-->
+   <!---->
+    <!--</if> />-->
+		<!--区重点项目-->
+		<!--<input type="checkbox" name="major4" value="是"  <if condition="$r1['major4'] eq '是'"> checked-->
+   <!---->
+    <!--</if>/>-->
+
+		<!--区局联席会项目-->
+		<!--<br />-->
+		<!--<input type="hidden" name="id" value="{$r1['id']}">-->
+		<!--<br />-->
+		<!--<br />-->
+		<!--</volist>-->
+		<!--<input type="hidden"  name="res_id"  value="{$res_id}">-->
+
+		<!--<input type="text" name="jumpurl" value="{$jumpurl}">-->
+		<!--<input type="submit" name="save" value="保存" />-->
+		<!--<a href="{:U('Xiangmu/index')}">取消</a>-->
+	<!--</form>-->
+	<form action="{:U(Index/bianji)}" method="post" style="padding-top: 20px;">
+		<div class="bianji" style="width:87%;margin-left: 13%;margin-top:20px;">
+			<div class="row" style="margin:0;text-align: center;height: 35px;background: #eee;border:1px solid #ccc;">
+				<h4>项目信息</h4>
+			</div>
+			<volist name="result_1" id="r1">
+				<ul>
+					<li>
+						<ul class="row" style="border-left:1px solid #ccc;">
+							<li>
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>项目名称</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="false"><input type="text" class="form-control" name="name" value="{$r1['name']}" readonly></h5>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="col-sm-6 ">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>项目建设年度</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true"title="{$r1.construction_year}"><input type="text" class="form-control" name="construction_year" value="{$r1['construction_year']}"></h5>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row" style="border-left:1px solid #ccc;">
+							<li>
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>建设内容</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true"title="{$r1.construction_content}"><input type="text" class="form-control" name="construction_content" value="{$r1['construction_content']}" ></h5>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="col-sm-6 ">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>本月周进度计划安排</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true"title="{$r1.current_week}"><input type="text" class="form-control" name="current_week" value="{$r1['current_week']}" ></h5>
+
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row" style="border-left:1px solid #ccc;">
+							<li>
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>2016年9月计划安排</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true"title="{$r1.plan_02}"><input type="text" class="form-control" name="plan_01" value="{$r1['plan_01']}" ></h5>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="col-sm-6 ">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>2016年10月计划安排</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true"title="{$r1.plan_02}"><input type="text" class="form-control" name="plan_02" value="{$r1['plan_02']}" ></h5>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row" style="border-left:1px solid #ccc;">
+							<li>
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>2016年11月计划安排</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true"title="{$r1.plan_03}"><input type="text" class="form-control" name="plan_03" value="{$r1['plan_03']}" ></h5>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="col-sm-6 ">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>2016年12月计划安排</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true" title="{$r1.plan_04}"><input type="text" class="form-control" name="plan_04" value="{$r1['plan_04']}" ></h5>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row" style="border-left:1px solid #ccc;">
+							<li>
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>2017年1月计划安排</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true" title="{$r1.plan_05}"><input type="text" class="form-control" name="plan_05" value="{$r1['plan_05']}" ></h5>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>2017年2月计划安排</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true" title="{$r1.plan_06}"><input type="text" class="form-control" name="plan_06" value="{$r1['plan_06']}" ></h5>
+
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row" style="border-left:1px solid #ccc;">
+							<li>
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>2017年3月计划安排</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true" title="{$r1.plan_07}"><input type="text" class="form-control" name="plan_07" value="{$r1['plan_07']}" ></h5>
+
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>2016年度资金需求</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true" title="{$r1.money_need}"><input type="text" class="form-control" name="money_need" value="{$r1['money_need']}" ></h5>
+
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="row" style="border-left:1px solid #ccc;">
+							<li>
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>2017年工期计划安排</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true" title="{$r1.next_year_plan}"><input type="text" class="form-control" name="next_year_plan" value="{$r1['next_year_plan']}" ></h5>
+
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-xs-4 bianji_left">
+											<h5>2017年资金需求</h5>
+										</div>
+										<div class="col-sm-8 bianji_right">
+											<h5 contenteditable="true" title="{$r1.money_need_next}"><input type="text" class="form-control" name="money_need_next" value="{$r1['money_need_next']}" ></h5>
+
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</volist>
+		</div>
+		<!--<div class="tuizi" style="width:87%;margin-left: 13%;margin-top:20px;">-->
+			<!--<div class="row" style="margin:0;text-align: center;height: 35px;background: #eee;border:1px solid #ccc;">-->
+				<!--<h4>投资项目审批办理进度</h4>-->
+			<!--</div>-->
+			<!--<div class="class" style="width: 100%;overflow: hidden;">-->
+				<!--<volist name="data" id="data">-->
+
+					<!--<div class="row jieduan">-->
+						<!--》{$data.name}：-->
+					<!--</div>-->
+					<!--<table class="jieduan_cont">-->
+						<!--<thead>-->
+						<!--<tr>-->
+
+							<!--<td class="th1">事项名称</td>-->
+							<!--&lt;!&ndash;<td class="th2">业务信息</td>&ndash;&gt;-->
+							<!--<td class="th2">受理时间</td>-->
+							<!--<td class="th2">办结时间</td>-->
+
+							<!--<td class="th6"  hidden>id</td>-->
+							<!--<td class="th3">操作</td>-->
+						<!--</tr>-->
+						<!--</thead>-->
+						<!--<tbody>-->
+						<!--<volist name="data['item']" id="c">-->
+							<!--<tr>-->
+								<!--<td class="th1">{$c.item_name} </td>-->
+								<!--&lt;!&ndash;<td class="th2">   </td>&ndash;&gt;-->
+								<!--<td class="th2" name="start_time">{$c.start_time}</td>-->
+								<!--<td class="th2" name="end_time">{$c.end_time}</td>-->
+								<!--<td class="th6" name="id" hidden>{$c.id}</a></td>-->
+								<!--<td class="th3"><a href="#"class="luru">信息录入</a></td>-->
+
+							<!--</tr>-->
+						<!--</volist>-->
+						<!--&lt;!&ndash;<tr>&ndash;&gt;-->
+						<!--&lt;!&ndash;<td class="th1">规划（建筑）方案征集及专家评定</td>&ndash;&gt;-->
+						<!--&lt;!&ndash;<td class="th2">无信息</td>&ndash;&gt;-->
+						<!--&lt;!&ndash;<td class="th2">2016&#45;&#45;09&#45;&#45;12</td>&ndash;&gt;-->
+						<!--&lt;!&ndash;<td class="th2">2016&#45;&#45;12&#45;&#45;23</td>&ndash;&gt;-->
+						<!--&lt;!&ndash;<td class="th3"><a href="">信息录入</a></td>&ndash;&gt;-->
+						<!--&lt;!&ndash;</tr>&ndash;&gt;-->
+						<!--&lt;!&ndash;<tr>&ndash;&gt;-->
+						<!--&lt;!&ndash;<td class="th1">规划（建筑）方案征集及专家评定</td>&ndash;&gt;-->
+						<!--&lt;!&ndash;<td class="th2">无信息</td>&ndash;&gt;-->
+						<!--&lt;!&ndash;<td class="th2">2016&#45;&#45;09&#45;&#45;12</td>&ndash;&gt;-->
+						<!--&lt;!&ndash;<td class="th2">2016&#45;&#45;12&#45;&#45;23</td>&ndash;&gt;-->
+						<!--&lt;!&ndash;<td class="th3"><a href="">信息录入</a></td>&ndash;&gt;-->
+						<!--&lt;!&ndash;</tr>&ndash;&gt;-->
+						<!--</tbody>-->
+					<!--</table>-->
+
+				<!--</volist>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;<div class="class" style="width: 100%;overflow: hidden;">&ndash;&gt;-->
+			<!--&lt;!&ndash;<div class="row jieduan">&ndash;&gt;-->
+			<!--&lt;!&ndash;》立项阶段：&ndash;&gt;-->
+			<!--&lt;!&ndash;</div>&ndash;&gt;-->
+			<!--&lt;!&ndash;<table class="jieduan_cont">&ndash;&gt;-->
+			<!--&lt;!&ndash;<thead>&ndash;&gt;-->
+			<!--&lt;!&ndash;<tr>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th1">事项名称</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th2">业务信息</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th2">受理时间</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th2">办结时间</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th3">操作</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;</tr>&ndash;&gt;-->
+			<!--&lt;!&ndash;</thead>&ndash;&gt;-->
+			<!--&lt;!&ndash;<tbody>&ndash;&gt;-->
+			<!--&lt;!&ndash;<tr>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th1">规划（建筑）方案征集及专家评定</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th2">无信息</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th2">2016&#45;&#45;09&#45;&#45;12</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th2">2016&#45;&#45;12&#45;&#45;23</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th3"><a href="">信息录入</a></td>&ndash;&gt;-->
+			<!--&lt;!&ndash;</tr>&ndash;&gt;-->
+			<!--&lt;!&ndash;<tr>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th1">规划（建筑）方案征集及专家评定</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th2">无信息</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th2">2016&#45;&#45;09&#45;&#45;12</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th2">2016&#45;&#45;12&#45;&#45;23</td>&ndash;&gt;-->
+			<!--&lt;!&ndash;<td class="th3"><a href="">信息录入</a></td>&ndash;&gt;-->
+			<!--&lt;!&ndash;</tr>&ndash;&gt;-->
+			<!--&lt;!&ndash;</tbody>&ndash;&gt;-->
+			<!--&lt;!&ndash;</table>&ndash;&gt;-->
+			<!--&lt;!&ndash;</div>&ndash;&gt;-->
+		<!--</div>-->
+		<input type="hidden" name="id" value="{$r1['id']}">
+		</volist>
+		<input type="submit" name="save" value="保存" class="bt btn-success baocun" style="margin-left:30%;"/>
+		<a href="{:U('Xiangmu/index')}">取消</a>
+	</form>
+
+
+	<div class="theme-popover">
+		<div class="theme-poptit">
+			<a href="javascript:;" title="关闭" class="close">×</a>
+			<h3>填写相关信息</h3>
+		</div>
+		<div class="theme-popbod dform">
+			<form class="theme-signin" name="loginform" action="" method="post">
+				<ol>
+					<!--<li><h4>填写相关信息</h4></li>-->
+					<li><input class="ipt" type="text" name="id"  size="20" hidden/></li>
+					<li><strong>受理时间：</strong><input type="text" name="time1" class="text date"  id="start_time" placeholder="请选择时间" /></li>
+					<li><strong>结束时间：</strong><input type="text" name="end_time" class="text date" id="end_time" value="" placeholder="请选择时间" /></li>
+
+					<li><input class="btn btn-primary" type="button" class="submit"  name="submit" value=" 保  存" id="baocun"/></li>
+				</ol>
+			</form>
+		</div>
+	</div>
+</block>
+
+<block name="script">
+	<script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+	<script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+	<link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+	<php>
+		if(C('COLOR_STYLE')=='blue_color') echo '
+		<link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">
+		';
+	</php>
+	<link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+	<link href="__PUBLIC__/Admin/css/lanrenzhijia.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8">
+		<script src="__STATIC__/thinkbox/jquery.thinkbox.js">
+
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var left = $(".bianji_left").height();
+			var right = $(".bianji_right").height();
+			var max = Math.max(left, right);
+			console.log(max)
+			$(".bianji_left").height(max);
+			$(".bianji_right").height(max);
+
+			$(".jieduan").click(function () {
+				$(this).next().toggle()
+			});
+
+			//搜索功能
+			$("#search").click(function () {
+				var url = $(this).attr('url');
+				var query = $('.search-form').find('input').serialize();
+				query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+				query = query.replace(/^&/g, '');
+				if (url.indexOf('?') > 0) {
+					url += '&' + query;
+				} else {
+					url += '?' + query;
+				}
+				window.location.href = url;
+			});
+			//回车搜索
+			$(".search-input").keyup(function (e) {
+				if (e.keyCode === 13) {
+					$("#search").click();
+					return false;
+				}
+			});
+
+			$(".select_company").change(function () {
+
+				var res = $(".select_company").val();
+				if (res == "another") {
+					$(".shuru").show();
+
+
+				} else {
+
+					$(".shuru").hide();
+				}
+
+			})
+
+			$('#baocun').click(function(){
+				var item_id=$('.ipt').val();
+				var start_time=$('#start_time').val();
+				var end_time=$('#end_time').val();
+				//alert(item_id);
+				$.ajax(
+						{
+							url: '{:U('Xiangmu/xiugai')}',
+							data: {id: item_id, start_time:start_time,end_time:end_time},
+							dataType: 'json',
+							method: 'post',
+							success: function (data) {
+
+
+								close();
+								//	window.location.reload();
+
+
+
+
+							}
+
+
+						}
+				)
+
+			})
+
+			$(".luru").click(function () {
+
+				//获得上一个节点的值
+//			var res=$(this).prev().val();
+
+				var res = $(this).parent().parent().find("td[name=id]").text();
+
+				$('.theme-popover-mask').fadeIn(100);
+				$('.theme-popover').slideDown(200);
+				$('input[name=id]').val(res);
+
+
+
+			})
+			function  close() {
+				$('.theme-popover-mask').fadeOut(100);
+				$('.theme-popover').slideUp(200);
+
+			}
+			$('.theme-poptit .close').click(function () {
+
+				$('.theme-popover-mask').fadeOut(100);
+				$('.theme-popover').slideUp(200);
+			})
+
+
+			$('.date').datetimepicker({
+				format: 'yyyy-mm-dd',
+				language: "zh-CN",
+				minView: 2,
+				autoclose: true
+			});
+			$('.time').datetimepicker({
+				format: 'yyyy-mm-dd hh:ii',
+				language: "zh-CN",
+				minView: 2,
+				autoclose: true
+			});
+			showTab();
+//回车搜索
+			$(".search-input").keyup(function (e) {
+				if (e.keyCode === 13) {
+					$("#search").click();
+					return false;
+				}
+			})
+		})
+
+		$(".sidebar").css("width","12%");
+		$(".subnav").css("padding-top","60px")
+	</script>
+</block>

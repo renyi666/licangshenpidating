@@ -1,0 +1,354 @@
+[ 2016-07-17T15:36:08+08:00 ] ::1 /aaaa/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0780s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0030s ]
+
+[ 2016-07-17T15:36:09+08:00 ] ::1 /aaaa/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0200s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.1550s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0020s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.567032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.567032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-17T15:36:09+08:00 ] ::1 /aaaa/index.php?s=/Home/User/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0800s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-17T15:36:25+08:00 ] ::1 /aaaa/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.3940s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_member` [ RunTime:0.1520s ]
+SQL: SELECT `uid`,`nickname`,`work_place`,`first_time`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `one_member` WHERE `uid` = 18 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `one_member` SET `login`=`login`+1,`last_login_time`='1468740984',`last_login_ip`='0' WHERE `uid` = 18 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_action` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_action_log` [ RunTime:0.1680s ]
+SQL: INSERT INTO `one_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','18','0','member','18','1468740984','company在2016-07-17 15:36登录了后台') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `one_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\phpStudy\WWW\aaaa\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `one_action_log` WHERE `action_id` = 1 AND `user_id` = 18 AND `create_time` > 1468654584 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_member` [ RunTime:0.1970s ]
+SQL: UPDATE `one_member` SET `score`=score+10 WHERE ( uid=18 AND status>-1 ) [ RunTime:0.0010s ]
+
+[ 2016-07-17T15:36:26+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.1850s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.3050s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 18  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_duty_member` [ RunTime:0.0650s ]
+SQL: SELECT `user_uid` FROM `one_duty_member` WHERE `duty_id` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0410s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` IN ('7','18') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time` FROM `one_xiangmu` WHERE `user_uid` IN ('7','18') ORDER BY create_time LIMIT 0,10   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.1820s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_category` [ RunTime:0.0590s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `one_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `one_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_document` [ RunTime:0.0250s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `one_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1468740985 AND ( deadline = 0 OR deadline > 1468740985 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: r1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.388022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.388022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-17T15:36:40+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/xinjian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_first` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_location` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant Xiangmu - assumed 'Xiangmu' D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 95 行.
+NOTIC: [8] Use of undefined constant xinjian - assumed 'xinjian' D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 95 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 95 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 99 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 120 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 127 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 134 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 142 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 149 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 156 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 163 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 172 行.
+NOTIC: [8] Undefined variable: r1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 175 行.
+NOTIC: [8] Undefined variable: r1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 183 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 185 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 188 行.
+NOTIC: [8] Undefined variable: r1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 190 行.
+NOTIC: [8] Undefined variable: r1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-17T15:37:03+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/xinjian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.1460s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_first` [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_location` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `one_xiangmu_location` WHERE `name` = 'ssss'  [ RunTime:0.0000s ]
+SQL: INSERT INTO `one_xiangmu_location` (`name`) VALUES ('ssss') [ RunTime:0.0030s ]
+SQL: INSERT INTO `one_xiangmu_first` (`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`fenlei`,`name`,`next_plan`,`location`,`company`,`man`,`phone`,`work_progress`,`problem`) VALUES ('否','否','否','否','否','否','18','分类二','ssas','','xxx','ssss','','','','') [ RunTime:0.0040s ]
+SQL: INSERT INTO `one_xiangmu` (`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`fenlei`,`name`,`next_plan`,`location`,`company`,`man`,`phone`,`work_progress`,`problem`) VALUES ('否','否','否','否','否','否','18','分类二','ssas','','xxx','ssss','','','','') [ RunTime:0.0010s ]
+SQL: INSERT INTO `one_xiangmu_copy` (`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`fenlei`,`name`,`next_plan`,`location`,`company`,`man`,`phone`,`work_progress`,`problem`,`xiangmu_id`) VALUES ('否','否','否','否','否','否','18','分类二','ssas','','xxx','ssss','','','','','452') [ RunTime:0.0060s ]
+
+[ 2016-07-17T15:37:03+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0070s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `one_duty` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `one_duty` WHERE `user_uid` = 18  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_duty_member` [ RunTime:0.0400s ]
+SQL: SELECT `user_uid` FROM `one_duty_member` WHERE `duty_id` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu` WHERE `user_uid` IN ('7','18') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time` FROM `one_xiangmu` WHERE `user_uid` IN ('7','18') ORDER BY create_time LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.1140s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_category` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `one_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `one_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_document` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `one_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1468741023 AND ( deadline = 0 OR deadline > 1468741023 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: r1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-17T15:37:10+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/xiangmu_copy_chakan/id/452/name/ssas/fenlei/%E5%88%86%E7%B1%BB%E4%BA%8C/user_uid/18.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0690s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0050s ]
+SQL: SELECT `user_uid` FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 452  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 452 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `xiangmu_id`,`id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4`,`user_uid`,`time`,`create_time` FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 452 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_category` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `one_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `one_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `one_document` [ RunTime:0.0940s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `one_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1468741030 AND ( deadline = 0 OR deadline > 1468741030 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.383022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.383022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-17T15:37:15+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/dayin_current/xiangmu_id/452/name/ssas/fenlei/%E5%88%86%E7%B1%BB%E4%BA%8C/company/ssss/location/xxx.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0270s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0050s ]
+SQL: SELECT `xiangmu_id`,`name`,`fenlei`,`location`,`company`,`man`,`phone`,`work_progress`,`next_plan`,`problem`,`help`,`action`,`major`,`major2`,`major3`,`major4` FROM `one_xiangmu_copy` WHERE `xiangmu_id` = 452  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant 项目记录 - assumed '项目记录' D:\phpStudy\WWW\aaaa\Application\Home\Controller\IndexController.class.php 第 499 行.
+
+[ 2016-07-17T15:37:30+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/bianji/id/452.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `one_xiangmu` WHERE `id` = 452  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_location` [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+SQL: SELECT `user_uid` FROM `one_xiangmu` WHERE `id` = 452  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\5f68bd977d901c4924175b54d6a65907.php 第 95 行.
+NOTIC: [8] Use of undefined constant bianji - assumed 'bianji' D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\5f68bd977d901c4924175b54d6a65907.php 第 95 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\5f68bd977d901c4924175b54d6a65907.php 第 95 行.
+NOTIC: [8] Undefined index: help D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\5f68bd977d901c4924175b54d6a65907.php 第 145 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-17T15:37:34+08:00 ] ::1 /aaaa/index.php?s=/Home/Index/xinjian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `one_config` [ RunTime:0.1950s ]
+SQL: SELECT `type`,`name`,`value` FROM `one_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_copy` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_first` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_location` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `one_xiangmu_fenlei` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `one_xiangmu_fenlei`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `one_channel` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `one_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant Xiangmu - assumed 'Xiangmu' D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 95 行.
+NOTIC: [8] Use of undefined constant xinjian - assumed 'xinjian' D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 95 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 95 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 99 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 120 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 127 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 134 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 142 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 149 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 156 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 163 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 172 行.
+NOTIC: [8] Undefined variable: r1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 175 行.
+NOTIC: [8] Undefined variable: r1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 183 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 185 行.
+NOTIC: [8] Undefined variable: result_1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 188 行.
+NOTIC: [8] Undefined variable: r1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 190 行.
+NOTIC: [8] Undefined variable: r1 D:\phpStudy\WWW\aaaa\Runtime\Cache\Home\f9abadd9f5823ae3f704384070266d49.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
